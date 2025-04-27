@@ -198,12 +198,25 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   transition: 0.3s ease;
 }
 
+.btn-md {
+  height: 54px;
+}
+
 .btn-accent {
   background: #CBAA65;
   color: #fff;
 }
 .btn-accent:hover, .btn-accent:focus {
   background: #CCA044;
+  color: #fff;
+}
+
+.btn-grey {
+  background: #414141;
+  color: #fff;
+}
+.btn-grey:hover, .btn-grey:focus {
+  background: #CBAA65;
   color: #fff;
 }
 
