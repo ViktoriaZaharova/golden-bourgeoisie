@@ -1,13 +1,78 @@
 @import "vars"
 
 // header
+header
+  font-size: 18px
+  .contact-link
+    margin: 0
+    color: $grey
+    &__icon
+      fill: $grey
+    &:hover
+      color: $accent-hover  
+  .btn-callback
+    margin: 0 0 0 36px
+    max-width: 254px
+  .list-messenger
+    margin: 0 0 0 64px
+    li
+      a
+        border-color: $grey
+        fill: $grey  
+  .phone-link
+    font-size: 20px
+    line-height: 24px
+  .mail-link
+    margin: 14px 0 0 
+    opacity: 0.7 
+    font-weight: normal  
+    &:last-child
+      margin: 14px 0 0 
+  .location
+    &:hover
+      color: $grey        
+
+.header-contacts
+  margin: 0 0 0 64px
+  
+
 .header-top
   padding: 20px 0
 
 .logo
   max-width: 140px
   width: 100%
+  margin: 0 auto 0 0
   @include d-flex
+
+.user-navigation
+  display: flex
+  align-items: flex-start
+  font-size: 16px
+  font-weight: 300
+  margin: 0 0 0 auto
+  &__item
+    margin: 0 12px 0 0
+    &:last-child
+      margin: 0
+  &__link
+    min-width: 83px
+    text-align: center
+    display: flex
+    flex-direction: column
+    align-items: center 
+    color: rgba($grey, .8)
+    &:hover
+      color: $accent-hover
+      .svg-icon
+        fill: $accent-hover
+  .svg-icon
+    margin: 0 auto 8px
+    width: 24px
+    height: 24px
+    min-width: 24px  
+    fill: $grey
+
 
 .header-bottom
   background: #414141  

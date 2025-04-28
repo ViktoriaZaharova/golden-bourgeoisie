@@ -21,6 +21,13 @@
 }
 @font-face {
   font-family: "Lato";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Lato/Lato-SemiBold.eot");
+  src: url("../fonts/Lato/Lato-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/Lato-SemiBold.woff") format("woff"), url("../fonts/Lato/Lato-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lato";
   font-weight: 700;
   font-style: normal;
   src: url("../fonts/Lato/Lato-Bold.eot");
@@ -352,6 +359,10 @@ h2, .h2 {
 
 .align-items-end {
   align-items: end;
+}
+
+.align-items-center {
+  align-items: center;
 }
 
 .form {

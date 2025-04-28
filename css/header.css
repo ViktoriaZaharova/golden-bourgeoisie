@@ -1,3 +1,47 @@
+header {
+  font-size: 18px;
+}
+header .contact-link {
+  margin: 0;
+  color: #414141;
+}
+header .contact-link__icon {
+  fill: #414141;
+}
+header .contact-link:hover {
+  color: #CCA044;
+}
+header .btn-callback {
+  margin: 0 0 0 36px;
+  max-width: 254px;
+}
+header .list-messenger {
+  margin: 0 0 0 64px;
+}
+header .list-messenger li a {
+  border-color: #414141;
+  fill: #414141;
+}
+header .phone-link {
+  font-size: 20px;
+  line-height: 24px;
+}
+header .mail-link {
+  margin: 14px 0 0;
+  opacity: 0.7;
+  font-weight: normal;
+}
+header .mail-link:last-child {
+  margin: 14px 0 0;
+}
+header .location:hover {
+  color: #414141;
+}
+
+.header-contacts {
+  margin: 0 0 0 64px;
+}
+
 .header-top {
   padding: 20px 0;
 }
@@ -5,9 +49,45 @@
 .logo {
   max-width: 140px;
   width: 100%;
+  margin: 0 auto 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.user-navigation {
+  display: flex;
+  align-items: flex-start;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 0 0 auto;
+}
+.user-navigation__item {
+  margin: 0 12px 0 0;
+}
+.user-navigation__item:last-child {
+  margin: 0;
+}
+.user-navigation__link {
+  min-width: 83px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(65, 65, 65, 0.8);
+}
+.user-navigation__link:hover {
+  color: #CCA044;
+}
+.user-navigation__link:hover .svg-icon {
+  fill: #CCA044;
+}
+.user-navigation .svg-icon {
+  margin: 0 auto 8px;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  fill: #414141;
 }
 
 .header-bottom {
