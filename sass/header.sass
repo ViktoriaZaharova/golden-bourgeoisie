@@ -1,3 +1,47 @@
-@import "fonts"
 @import "vars"
 
+// header
+.header-top
+  padding: 20px 0
+
+.logo
+  max-width: 140px
+  width: 100%
+  @include d-flex
+
+.header-bottom
+  background: #414141  
+
+.menu-header
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+  font-size: 18px
+  font-weight: normal
+  justify-content: space-between
+  li
+    flex: auto
+    margin: 0
+    .menu-link
+      width: 100%
+      height: 100%
+      text-align: center
+      text-transform: uppercase
+      font-size: 17px
+      padding: 20px 37px
+      color: #fff
+      border: 1px solid rgba(#fff,.3)
+      @include d-flex
+      &:hover
+        background: rgba(#fff, .3)
+        color: #fff
+      &__burger
+        stroke: #fff
+        fill: none
+        padding: 20px 40px
+        // width: 103px
+        svg
+          width: 22px
+          height: 16px
+
+    

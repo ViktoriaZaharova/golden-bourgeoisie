@@ -25,14 +25,52 @@
 <body>
 
   <header>
-    <div class="container">
-      <div class="row">
+    <div class="header-top w-100">
+      <div class="container">
+        <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+      </div>
+    </div>
 
+    <div class="header-bottom w-100">
+      <div class="container">
+        <nav class="nav-menu">
+          <ul class="menu menu-header my-ul">
+            <li class="menu-item dropdown"><a href="massage.html" class="menu-link">Массаж</a>
+              <div class="dropdown-menu">
+                <ul class="menu-dropdown my-ul">
+                  <li class="menu-dropdown__item"><a href="#" class="menu-dropdown__link">Название вида массажа</a></li>
+                  <li class="menu-dropdown__item"><a href="#" class="menu-dropdown__link">Название вида массажа</a></li>
+                  <li class="menu-dropdown__item"><a href="#" class="menu-dropdown__link">Название вида массажа</a></li>
+                  <li class="menu-dropdown__item"><a href="#" class="menu-dropdown__link">Длинное название вида массажа</a></li>
+                  <li class="menu-dropdown__item"><a href="#" class="menu-dropdown__link">Название вида массажа</a></li>
+                  <li class="menu-dropdown__item"><a href="#" class="menu-dropdown__link">Название вида массажа</a></li>
+                  <li class="menu-dropdown__item"><a href="#" class="menu-dropdown__link">Длинное название вида массажа</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-item"><a href="cosmetology.html" class="menu-link">Косметология</a></li>
+            <li class="menu-item"><a href="shop.html" class="menu-link">Магазин</a></li>
+            <li class="menu-item"><a href="about.html" class="menu-link">О компании</a></li>
+            <li class="menu-item"><a href="employees.html" class="menu-link">Сотрудники</a></li>
+            <li class="menu-item"><a href="stock.html" class="menu-link">Акции</a></li>
+            <li class="menu-item"><a href="reviews.html" class="menu-link">Отзывы</a></li>
+            <li class="menu-item"><a href="prices.html" class="menu-link">Цены</a></li>
+            <li class="menu-item"><a href="articles.html" class="menu-link">Статьи</a></li>
+            <li class="menu-item"><a href="contacts.html" class="menu-link">Контакты</a></li>
+            <li class="menu-item">
+              <a href="#" class="menu-link menu-link__burger">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#burger-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   </header>
 
-  <main class="main">
+  <main class="home">
     <div class="container">
 
     </div>
@@ -340,11 +378,102 @@
     </div>
   </section>
 
-
-
   <footer>
     <div class="container">
+      <div class="w-100">
+        <div class="row">
+          <div class="col-6">
+            <div class="footer-column">
+              <div class="copyright">© 2022-2025 Золотая БуржуАзия</div>
+              <div class="description-company-small">Спа-салон и дальше краткое описание</div>
 
+              <ul class="list-documents mb-32 my-ul">
+                <li><a href="agreement.html" target="_blank">Соглашение об обработке персональных данных</a></li>
+                <li><a href="politics.html" target="_blank">Политика конфиденциальности</a></li>
+                <li><a href="map-site.html" target="_blank">Карта сайта</a></li>
+              </ul>
+              <div class="box-text mb-32">
+                <p>Информация на сайте не является публичной офертой.</p>
+                <p>Обращаем ваше внимание на то, что данный интернет-сайт, а так же вся информация об услугах и ценах,
+                  предоставленная на нем, носит исключительно информационный характер и ни при каких условиях не
+                  является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса Российской
+                  Федерации.</p>
+              </div>
+
+              <div class="legal-information">
+                <p>ИП Фамилия Имя Отчество</p>
+                <p>ИНН 12345678990</p>
+                <p>ОГРН 1234567890</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 d-flex">
+            <nav class="nav-menu">
+              <ul class="menu menu-footer my-ul">
+                <li class="menu-item"><a href="index.html" class="menu-link">Главная</a></li>
+                <li class="menu-item"><a href="massage.html" class="menu-link">Массаж</a></li>
+                <li class="menu-item"><a href="cosmetology.html" class="menu-link">Косметология</a></li>
+                <li class="menu-item"><a href="shop.html" class="menu-link">Магазин</a></li>
+                <li class="menu-item"><a href="about.html" class="menu-link">О компании</a></li>
+                <li class="menu-item"><a href="employees.html" class="menu-link">Сотрудники</a></li>
+                <li class="menu-item"><a href="stock.html" class="menu-link">Акции</a></li>
+                <li class="menu-item"><a href="reviews.html" class="menu-link">Отзывы</a></li>
+                <li class="menu-item"><a href="prices.html" class="menu-link">Цены</a></li>
+                <li class="menu-item"><a href="articles.html" class="menu-link">Статьи</a></li>
+                <li class="menu-item"><a href="contacts.html" class="menu-link">Контакты</a></li>
+              </ul>
+            </nav>
+
+            <div class="footer-contacts">
+              <a href="tel:+79890001978" class="phone-link contact-link">
+                <svg class="svg-icon contact-link__icon">
+                  <use xlink:href="img/sprite.svg#phone-icon"></use>
+                </svg>
+                <span class="contact-link__text">+7 (989) 000-19-78</span>
+              </a>
+
+              <a href="mailto:email@mail.ru" class="mail-link contact-link">
+                <svg class="svg-icon contact-link__icon">
+                  <use xlink:href="img/sprite.svg#mail-icon"></use>
+                </svg>
+                <span class="contact-link__text">email@mail.ru</span>
+              </a>
+
+              <div class="location contact-link">
+                <svg class="svg-icon contact-link__icon">
+                  <use xlink:href="img/sprite.svg#location-icon"></use>
+                </svg>
+                <span class="contact-link__text">Краснодар, Дальняя ул., 8, корп. 2
+                  <span class="schedule-text">пн-вс: 10:00 - 20:00</span>
+                </span>
+              </div>
+
+              <ul class="list-messenger my-ul">
+                <li>
+                  <a href="#" target="_blank"><svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#whatsapp-icon"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank"><svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#telegram-icon"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank"><svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#vk-icon"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+              <a href="#" class="btn btn-md btn-accent btn-callback w-100">Записаться на процедуру</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
 
