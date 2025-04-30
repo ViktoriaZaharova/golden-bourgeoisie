@@ -55,7 +55,62 @@ $('.specialists-slider').slick({
   ],
 });
 
+$('.home-slider').slick({
+  slidesToShow: 1,
+  fade: true,
+  arrows: false,
+  dots: true,
+});
+
+$('.services-slider').slick({
+  slidesToShow: 4,
+  prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+  nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+});
+
 // Fancybox
 Fancybox.bind("[data-fancybox]", {
   // Your custom options
 });
+
+// tabs
+$(document).ready(function ($) {
+  $('.tabs-wrap li a').click(function (e) {
+    e.preventDefault();
+  });
+  $('.tabs-wrap li').click(function () {
+    $('.tabs-wrap li').removeClass('active');
+    $(this).addClass('active').closest('.tabs-wrap').find('.tab_content').removeClass('active');
+
+    var selectTab = $(this).find('a').attr("href");
+
+    $(selectTab).addClass('active');
+
+    function slicks() {
+      $('.slick-slider').slick("refresh");
+    }
+
+    slicks()
+  });
+});
+

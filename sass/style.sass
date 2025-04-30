@@ -47,7 +47,7 @@ body
   color: $grey
 
 html, body
-  overflow-x: hidden 
+  overflow-x: hidden
 
 img
   display: block
@@ -137,6 +137,26 @@ button, .btn
   border-radius: 0
   transition: 0.3s ease
 
+.btn-group
+  width: 100%
+  display: flex
+  align-items: stretch
+  .btn
+    flex: 1
+    margin: 0 14px 0 0
+    &:last-child
+      margin: 0
+
+.btn-group-column
+  flex-direction: column
+  align-items: flex-start
+  .btn
+    width: 100%
+    margin: 0 0 8px
+    flex: none
+    &:last-child
+      margin: 0
+
 .btn-md
   height: 54px
 
@@ -144,7 +164,7 @@ button, .btn
   background: $accent
   color: #fff
   &:hover, &:focus
-    background: $accent-hover  
+    background: $accent-hover
     color: #fff
 
 .btn-grey
@@ -152,7 +172,15 @@ button, .btn
   color: #fff
   &:hover, &:focus
     background: $accent
-    color: #fff    
+    color: #fff
+
+.btn-border
+  border: 1px solid $grey
+  background: transparent
+  color: $grey
+  &:hover, &:focus
+    background: $grey
+    color: #fff
 
 .svg-icon
   display: inline-block
@@ -176,6 +204,11 @@ ul, ol
 h1, .h1
   width: 100%
   margin: 0
+  font-size: 68px
+  font-weight: bold
+  font-family: $title-font
+  line-height: 76px
+  text-transform: uppercase
 
 h2, .h2
   font-size: 48px
@@ -185,6 +218,16 @@ h2, .h2
   width: 100%
   margin: 0 0 40px
   text-transform: uppercase
+
+h3, .h3
+  font-size: 36px
+  line-height: 42px
+  font-family: $title-font
+  font-weight: bold
+  width: 100%
+  text-transform: uppercase
+  margin: 0 0 26px
+
 
 .subtitle-text
   font-size: 14px
@@ -205,33 +248,38 @@ h2, .h2
 
 .box-text
   font-size: 18px
-  line-height: 24px 
+  line-height: 24px
   font-weight: 300
 
 .w-100
-  width: 100%       
+  width: 100%
 
 .p-120
   padding: 120px 0
 
 .p-150
-  padding: 150px 0  
+  padding: 150px 0
+
+.m-150
+  margin: 150px 0  
 
 .mb-40
-  margin-bottom: 40px 
+  margin-bottom: 40px
 
 .mb-32
-  margin-bottom: 32px   
-  
-.mb-18
-  margin-bottom: 18px 
+  margin-bottom: 32px
 
+.mb-18
+  margin-bottom: 18px
+
+.fz-20
+  font-size: 20px
 
 .container
   width: 100%
   max-width: 1780px
   margin: 0 auto
-  padding: 0 9px    
+  padding: 0 9px
   display: flex
   flex-wrap: wrap
 
@@ -244,26 +292,36 @@ h2, .h2
 .col-12
   flex: 0 0 100%
   max-width: 100%
-  padding: 0 9px  
+  padding: 0 9px
+
+.col-7
+  flex: 0 0 58.3333%
+  max-width: 58.3333%
+  padding: 0 9px
 
 .col-6
   flex: 0 0 50%
   max-width: 50%
   padding: 0 9px
 
+.col-5
+  flex: 0 0 41.6667%
+  max-width: 41.6667%
+  padding: 0 9px
+
 .col-4
   flex: 0 0 33.3333%
   max-width: 33.3333%
-  padding: 0 9px  
+  padding: 0 9px
 
 .d-flex
   display: flex
 
 .flex-wrap
-  flex-wrap: wrap  
+  flex-wrap: wrap
 
 .align-items-end
-  align-items: end  
+  align-items: end
 
 .align-items-center
   align-items: center
@@ -297,7 +355,7 @@ h2, .h2
   max-width: 100%
   background: #fff
   border: 1px solid #E2E8F0
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2)  
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2)
   font-size: 18px
   &__item
     width: 100%
@@ -311,6 +369,50 @@ h2, .h2
     &:hover
       color: $accent
 
+.tabs
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  li
+    margin: 0 12px 0 0
+    &:last-child
+      margin: 0
+    &.active
+      .tabs-link
+        background: #F0EEDE
+        color: $grey
+  .tabs-link
+    display: flex
+    align-items: center
+    background: #FAF9F2
+    color: $grey
+    font-size: 20px
+    text-align: center
+    padding: 6px
+    border-radius: 60px
+    min-width: 224px
+    max-width: 100%
+    &__text
+      margin: 0 auto
+      display: block
+      width: 100%
+    &__icon
+      @include d-flex
+      border-radius: 50%
+      width: 52px
+      height: 52px
+      min-width: 52px
+      background: #D9D9D9
+      overflow: hidden
+    &:hover
+      background: #F0EEDE
+      color: $grey
+
+.tab_content
+  display: none
+  transition: all .3s ease
+  &.active
+    display: block
 
 // slick
 .slick-slider
@@ -321,13 +423,24 @@ h2, .h2
 
 .slider-arrows
   display: flex
-  align-items: center  
+  align-items: center
+  .slick-arrow
+    position: relative
+    z-index: 1
+    transform: none
+    left: 0
+    top: 0
+    right: 0
+  .slick-next
+    margin: 0 0 0 24px
 
 .slick-arrow
   @include d-flex
-  z-index: 1
-  position: relative  
-  opacity: 1  
+  z-index: 2
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  opacity: 1
   width: 56px
   height: 56px
   min-width: 56px
@@ -341,10 +454,47 @@ h2, .h2
     transition: .3s ease
 
 .slick-next
-  margin: 0 0 0 24px  
+  right: -28px
 
+.slick-prev
+  left: -28px
 
-
+.slick-dots
+  list-style: none
+  padding: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  z-index: 1
+  opacity: 1
+  margin: 26px auto 0
+  li
+    cursor: pointer
+    transition: .3s ease
+    margin: 0 6px
+    @include d-flex
+    width: 12px
+    height: 12px
+    min-width: 12px
+    border-radius: 50%
+    background: rgba(#DEDEDE, .8)
+    position: relative
+    z-index: 1
+    &.slick-active
+      background: $grey
+      &::before
+        content: ''
+        position: absolute
+        left: -3px
+        top: -3px
+        width: calc( 100% + 6px )
+        height: calc( 100% + 6px )
+        z-index: -1
+        background: rgba(#DEDEDE, .2)
+        border-radius: 50%
+    button
+      display: none
 
 //checkbox my
 .label-checkbox

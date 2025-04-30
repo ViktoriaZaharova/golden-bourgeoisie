@@ -205,6 +205,32 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   transition: 0.3s ease;
 }
 
+.btn-group {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+.btn-group .btn {
+  flex: 1;
+  margin: 0 14px 0 0;
+}
+.btn-group .btn:last-child {
+  margin: 0;
+}
+
+.btn-group-column {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.btn-group-column .btn {
+  width: 100%;
+  margin: 0 0 8px;
+  flex: none;
+}
+.btn-group-column .btn:last-child {
+  margin: 0;
+}
+
 .btn-md {
   height: 54px;
 }
@@ -224,6 +250,16 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 }
 .btn-grey:hover, .btn-grey:focus {
   background: #CBAA65;
+  color: #fff;
+}
+
+.btn-border {
+  border: 1px solid #414141;
+  background: transparent;
+  color: #414141;
+}
+.btn-border:hover, .btn-border:focus {
+  background: #414141;
   color: #fff;
 }
 
@@ -254,6 +290,11 @@ ul, ol {
 h1, .h1 {
   width: 100%;
   margin: 0;
+  font-size: 68px;
+  font-weight: bold;
+  font-family: "CormorantGaramond", sans-serif;
+  line-height: 76px;
+  text-transform: uppercase;
 }
 
 h2, .h2 {
@@ -264,6 +305,16 @@ h2, .h2 {
   width: 100%;
   margin: 0 0 40px;
   text-transform: uppercase;
+}
+
+h3, .h3 {
+  font-size: 36px;
+  line-height: 42px;
+  font-family: "CormorantGaramond", sans-serif;
+  font-weight: bold;
+  width: 100%;
+  text-transform: uppercase;
+  margin: 0 0 26px;
 }
 
 .subtitle-text {
@@ -303,6 +354,10 @@ h2, .h2 {
   padding: 150px 0;
 }
 
+.m-150 {
+  margin: 150px 0;
+}
+
 .mb-40 {
   margin-bottom: 40px;
 }
@@ -313,6 +368,10 @@ h2, .h2 {
 
 .mb-18 {
   margin-bottom: 18px;
+}
+
+.fz-20 {
+  font-size: 20px;
 }
 
 .container {
@@ -337,9 +396,21 @@ h2, .h2 {
   padding: 0 9px;
 }
 
+.col-7 {
+  flex: 0 0 58.3333%;
+  max-width: 58.3333%;
+  padding: 0 9px;
+}
+
 .col-6 {
   flex: 0 0 50%;
   max-width: 50%;
+  padding: 0 9px;
+}
+
+.col-5 {
+  flex: 0 0 41.6667%;
+  max-width: 41.6667%;
   padding: 0 9px;
 }
 
@@ -415,6 +486,62 @@ h2, .h2 {
   color: #CBAA65;
 }
 
+.tabs {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.tabs li {
+  margin: 0 12px 0 0;
+}
+.tabs li:last-child {
+  margin: 0;
+}
+.tabs li.active .tabs-link {
+  background: #F0EEDE;
+  color: #414141;
+}
+.tabs .tabs-link {
+  display: flex;
+  align-items: center;
+  background: #FAF9F2;
+  color: #414141;
+  font-size: 20px;
+  text-align: center;
+  padding: 6px;
+  border-radius: 60px;
+  min-width: 224px;
+  max-width: 100%;
+}
+.tabs .tabs-link__text {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+}
+.tabs .tabs-link__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  background: #D9D9D9;
+  overflow: hidden;
+}
+.tabs .tabs-link:hover {
+  background: #F0EEDE;
+  color: #414141;
+}
+
+.tab_content {
+  display: none;
+  transition: all 0.3s ease;
+}
+.tab_content.active {
+  display: block;
+}
+
 .slick-slider {
   width: 100%;
 }
@@ -427,13 +554,26 @@ h2, .h2 {
   display: flex;
   align-items: center;
 }
+.slider-arrows .slick-arrow {
+  position: relative;
+  z-index: 1;
+  transform: none;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+.slider-arrows .slick-next {
+  margin: 0 0 0 24px;
+}
 
 .slick-arrow {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
-  position: relative;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   opacity: 1;
   width: 56px;
   height: 56px;
@@ -450,7 +590,55 @@ h2, .h2 {
 }
 
 .slick-next {
-  margin: 0 0 0 24px;
+  right: -28px;
+}
+
+.slick-prev {
+  left: -28px;
+}
+
+.slick-dots {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  margin: 26px auto 0;
+}
+.slick-dots li {
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin: 0 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  min-width: 12px;
+  border-radius: 50%;
+  background: rgba(222, 222, 222, 0.8);
+  position: relative;
+  z-index: 1;
+}
+.slick-dots li.slick-active {
+  background: #414141;
+}
+.slick-dots li.slick-active::before {
+  content: "";
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  z-index: -1;
+  background: rgba(222, 222, 222, 0.2);
+  border-radius: 50%;
+}
+.slick-dots li button {
+  display: none;
 }
 
 .label-checkbox {
