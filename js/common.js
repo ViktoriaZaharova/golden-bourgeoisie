@@ -88,6 +88,70 @@ $('.services-slider').slick({
   ],
 });
 
+$('.why-us-slider').slick({
+  slidesToShow: 1,
+  fade: true,
+  appendArrows: '.why-us-slider__arrows',
+  prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+  nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+});
+
+$('.sales-slider').slick({
+  slidesToShow: 5,
+  appendArrows: '.sales-slider__arrows',
+  prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+  nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+  responsive: [
+    {
+      breakpoint: 1400,
+      settings: {
+        slidesToShow: 4,
+      },
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+});
+
+$('.results-slider').slick({
+  slidesToShow: 3,
+  swipe: false,
+  swipeToSlide: false,
+  appendArrows: '.results-slider__arrows',
+  prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+  nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+});
+
 // Fancybox
 Fancybox.bind("[data-fancybox]", {
   // Your custom options
@@ -114,3 +178,17 @@ $(document).ready(function ($) {
   });
 });
 
+
+// twenty twenty
+$(function(){
+  $(".twentytwenty-container").twentytwenty({
+    // default_offset_pct: 0.7, // How much of the before image is visible when the page loads
+    orientation: 'horizontal', // Orientation of the before and after images ('horizontal' or 'vertical')
+    before_label: 'До', // Set a custom before label
+    after_label: 'После', // Set a custom after label
+    // no_overlay: true, //Do not show the overlay with before and after
+    // move_slider_on_hover: true, // Move slider on mouse hover?
+    // move_with_handle_only: true, // Allow a user to swipe anywhere on the image to control slider movement. 
+    click_to_move: false // Allow a user to click (or tap) anywhere on the image to move the slider to that location.
+  });
+});
