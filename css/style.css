@@ -142,10 +142,10 @@ input, textarea, select {
   cursor: pointer;
 }
 input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
-  color: #414141;
+  color: rgba(65, 65, 65, 0.7);
 }
 input::placeholder, textarea::placeholder, select::placeholder {
-  color: #414141;
+  color: rgba(65, 65, 65, 0.7);
 }
 input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:focus {
   outline: none;
@@ -379,6 +379,10 @@ h3, .h3 {
   margin-left: auto;
 }
 
+.mt-40 {
+  margin-top: 40px;
+}
+
 .fz-20 {
   font-size: 20px;
 }
@@ -583,6 +587,10 @@ blockquote::before p {
 }
 blockquote::before p:last-child {
   margin: 0;
+}
+
+.d-tablet {
+  display: none;
 }
 
 .slick-slider {

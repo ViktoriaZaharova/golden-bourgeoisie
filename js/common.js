@@ -8,7 +8,7 @@ $('.certificate-slider').slick({
   nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
   responsive: [
     {
-      breakpoint: 992,
+      breakpoint: 1300,
       settings: {
         slidesToShow: 2,
       },
@@ -29,7 +29,7 @@ $('.specialists-slider').slick({
   nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
   responsive: [
     {
-      breakpoint: 1200,
+      breakpoint: 1440,
       settings: {
         slidesToShow: 4,
       },
@@ -138,7 +138,7 @@ $('.results-slider').slick({
   nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
   responsive: [
     {
-      breakpoint: 992,
+      breakpoint: 1200,
       settings: {
         slidesToShow: 2,
       },
