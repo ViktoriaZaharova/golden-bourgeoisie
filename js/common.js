@@ -70,19 +70,17 @@ $('.services-slider').slick({
     {
       breakpoint: 1200,
       settings: {
-        slidesToShow: 3,
-      },
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
+        variableWidth: true,
+        arrows: false,
       },
     },
     {
       breakpoint: 768,
       settings: {
         slidesToShow: 1,
+        variableWidth: true,
+        arrows: false,
       },
     },
   ],
@@ -103,21 +101,15 @@ $('.sales-slider').slick({
   nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
   responsive: [
     {
-      breakpoint: 1400,
+      breakpoint: 1500,
       settings: {
         slidesToShow: 4,
       },
     },
     {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 3,
-      },
-    },
-    {
       breakpoint: 992,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 3,
       },
     },
     {

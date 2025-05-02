@@ -43,6 +43,12 @@ header .location:hover {
 }
 
 .header-top {
+  background: #FAF9F2;
+  padding: 10px 0;
+  display: none;
+}
+
+.header-center {
   padding: 20px 0;
 }
 
