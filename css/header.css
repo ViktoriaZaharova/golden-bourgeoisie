@@ -47,6 +47,15 @@ header .location:hover {
   padding: 10px 0;
   display: none;
 }
+.header-top .phone-link {
+  display: none;
+}
+.header-top .mail-link {
+  margin: 0;
+}
+.header-top .mail-link:last-child {
+  margin: 0;
+}
 
 .header-center {
   padding: 20px 0;
@@ -137,4 +146,17 @@ header .location:hover {
 .menu-header li .menu-link__burger svg {
   width: 22px;
   height: 16px;
+}
+
+.btn-burger {
+  width: 54px;
+  height: 54px;
+  min-width: 54px;
+  stroke: #fff;
+  background: #CBAA65;
+  margin: 0 18px 0 0;
+  padding: 19px 16px;
+  display: none;
+  align-items: center;
+  justify-content: center;
 }

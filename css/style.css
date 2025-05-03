@@ -473,11 +473,11 @@ h3, .h3 {
   position: relative;
   z-index: 1;
 }
-.dropdown:hover .menu-dropdown {
+.dropdown:hover .dropdown-menu {
   display: block;
 }
 
-.menu-dropdown {
+.dropdown-menu {
   display: none;
   position: absolute;
   left: 0;
@@ -490,6 +490,14 @@ h3, .h3 {
   background: #fff;
   border: 1px solid #E2E8F0;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu-right {
+  left: auto;
+  right: 0;
+}
+
+.menu-dropdown {
   font-size: 18px;
 }
 .menu-dropdown__item {

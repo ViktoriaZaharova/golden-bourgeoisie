@@ -113,9 +113,9 @@ $('.sales-slider').slick({
       },
     },
     {
-      breakpoint: 768,
+      breakpoint: 576,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
       },
     },
   ],

@@ -224,10 +224,17 @@
     height: 50px
     padding: 15px 10px
 
-  .btn-group .btn
-    margin: 0 8px 0 0
-    &:last-child
-      margin: 0
+  .btn-group
+    .btn
+      margin: 0 8px 0 0
+      &:last-child
+        margin: 0
+
+  .btn-group-column
+    .btn
+      margin: 0 0 8px
+      &:last-child
+        margin: 0
 
   .btn-md
     height: 46px
@@ -487,9 +494,243 @@
   .menu-header li .menu-link
     padding: 16px 18px
 
+  .dropdown-menu
+    padding: 12px
+
+  .menu-dropdown
+    font-size: 16px
+
 @media only screen and (max-width: 992px)
+  .tabs
+    .tabs-link
+      font-size: 16px
+      min-width: 166px
+      &__icon
+        width: 36px
+        height: 36px
+        min-width: 36px
+
+@media only screen and (max-width: 920px)
+  .user-navigation
+    &__item
+      margin: 0 22px 0 0
+      &:last-child
+        margin: 0
+    &__link
+      min-width: auto
+      width: 22px
+      svg
+        margin: 0
+      span
+        display: none
+
+  header
+    border-bottom: 1px solid #E6E6E6
+    .btn-callback
+      max-width: 194px
+    .phone-link
+      font-size: 16px
+      line-height: 20px
+
+  .header-center
+    .user-navigation
+      margin: 0 0 0 26px
+    .phone-link
+      display: none
+
+  .header-bottom
+    display: none
+
+  .header-top
+    .phone-link
+      display: flex
+    .mail-link
+      opacity: 0.8
+      margin: 6px 0 0
+      &:last-child
+        margin: 6px 0 0
+    .location
+      .contact-link__text
+        flex-direction: column
+        align-items: flex-start
+    .schedule-text
+      margin: 8px 0 0
+    .contact-link
+      margin: 0 36px 0 0
+      &:last-child
+        margin: 8px 0 0
+    .phone-link
+      margin: 0
+
+  .btn-burger
+    display: flex
+
+  .contact-link__icon
+    margin: 0 8px 0 0
 
 @media only screen and (max-width: 768px)
+  .btn
+    height: 46px
+    padding: 13px 15px
+
+  h1, .h1
+    font-size: 34px
+    line-height: 40px
+    margin: 0 0 10px
+
+  h2, .h2
+    font-size: 30px
+    line-height: 38px
+
+  h3, .h3
+    font-size: 26px
+    line-height: 34px
+
+  .subtitle-text
+    font-size: 13px
+    &::before
+      width: 16px
+      height: 16px
+      margin: 0 8px 0 0
+
+  .home-slider
+    padding: 16px 16px 34px
+    &__avatar
+      margin: 0 0 18px
+      width: 66px
+      height: 66px
+      min-width: 66px
+    .box-text
+      font-size: 16px
+      line-height: 22px
+      margin: 10px 0 15px
+    .btn-group
+      flex-direction: column
+      align-items: flex-start
+      .btn
+        margin: 0 0 8px
+        &:last-child
+          margin: 0
+
+  .slick-dots
+    margin: 10px 0 0
+
+  .services-section
+    margin: 90px 0 100px
+
+  .container, .slider-stretch .slick-slide
+    padding: 0 7px
+
+  .row, .slider-stretch .slick-list
+    margin: 0 -7px
+
+  .col-md-8
+    flex: 0 0 66.6667%
+    max-width: 66.6667%
+    padding: 0 7px
+
+  .col-md-4
+    flex: 0 0 33.3333%
+    max-width: 33.3333%
+    padding: 0 7px
+
+  .mb-40
+    margin-bottom: 30px
+
+  .mb-md-10
+    margin-bottom: 10px
+
+  .m-150
+    margin: 100px 0
+
+  .btn
+    height: 42px
+
+  .tabs li
+    margin: 0 8px 8px 0
+    &:last-child
+      margin: 0 0 8px
+
+  .services-card
+    min-width: 220px
+    width: 220px
+    padding: 14px
+    &__img
+      height: 130px
+    &__body
+      height: calc( 100% - 130px )
+      padding: 14px 0 0
+    .btn-group
+      .btn
+        margin: 0 0 6px
+        &:last-child
+          margin: 0
+    .price
+      display: block
+      margin: 8px 0 14px
+      width: 100%
+    &__row
+      margin: 0 0 8px
+      .price
+        display: none
+    &__name
+      font-size: 17px
+      line-height: 24px
+    .box-text
+      margin: 0
+      font-size: 15px
+      line-height: 21px
+
+  .btn-all-services
+    margin: 22px auto 0
+
+  .why-us-content
+    padding: 20px
+
+  .why-us-content__preview-item
+    width: 76px
+    height: 76px
+    min-width: 76px
+
+  .slider-arrows .slick-next
+    margin: 0 0 0 20px
+
+  .slider-arrows .slick-arrow
+    width: 46px
+    height: 46px
+    min-width: 46px
+
+  .why-us-content__head
+    margin: 0 0 48px
+
+  .why-us-slider h3
+    margin: 14px 0 20px
+
+  .subtitle-information
+    max-width: 190px
+    font-size: 14px
+    line-height: 20px
+    padding: 0 0 12px
+
+  .sale-card
+    &__img
+      height: 220px
+    &__body
+      height: calc( 100% - 220px )
+      padding: 12px 0 0
+      &-content
+        margin: 0 0 14px
+    &__date
+      margin: 0 0 10px
+      padding: 4px 12px
+    &__name
+      font-size: 20px
+      line-height: 24px
+      margin: 0 0 12px
+
+  .old-price
+    font-size: 13px
+    margin: 0 0 0 6px
 
 @media only screen and (max-width: 576px)
 

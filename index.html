@@ -36,12 +36,20 @@
             <span class="schedule-text">пн-вс: 10:00 - 20:00</span>
           </span>
         </div>
-        <a href="mailto:email@mail.ru" class="mail-link contact-link">
-          <svg class="svg-icon contact-link__icon">
-            <use xlink:href="img/sprite.svg#mail-icon"></use>
-          </svg>
-          <span class="contact-link__text">email@mail.ru</span>
-        </a>
+        <div class="header-contacts">
+          <a href="tel:+79890001978" class="phone-link contact-link">
+            <svg class="svg-icon contact-link__icon">
+              <use xlink:href="img/sprite.svg#phone-icon"></use>
+            </svg>
+            <span class="contact-link__text">+7 (989) 000-19-78</span>
+          </a>
+          <a href="mailto:email@mail.ru" class="mail-link contact-link">
+            <svg class="svg-icon contact-link__icon">
+              <use xlink:href="img/sprite.svg#mail-icon"></use>
+            </svg>
+            <span class="contact-link__text">email@mail.ru</span>
+          </a>
+        </div>
         <ul class="list-messenger my-ul">
           <li>
             <a href="#" target="_blank"><svg class="svg-icon">
@@ -67,6 +75,11 @@
 
     <div class="header-center w-100">
       <div class="container align-items-center">
+        <a href="#" class="btn-burger">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#burger-icon"></use>
+          </svg>
+        </a>
         <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
 
         <div class="location contact-link">
@@ -181,12 +194,20 @@
             <li class="menu-item"><a href="prices.html" class="menu-link">Цены</a></li>
             <li class="menu-item"><a href="articles.html" class="menu-link">Статьи</a></li>
             <li class="menu-item"><a href="contacts.html" class="menu-link">Контакты</a></li>
-            <li class="menu-item">
+            <li class="menu-item dropdown">
               <a href="#" class="menu-link menu-link__burger">
                 <svg class="svg-icon">
                   <use xlink:href="img/sprite.svg#burger-icon"></use>
                 </svg>
               </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <ul class="menu-dropdown my-ul">
+                  <li class="menu-dropdown__item"><a href="#" class="menu-dropdown__link">Название раздела</a></li>
+                  <li class="menu-dropdown__item"><a href="#" class="menu-dropdown__link">Название раздела</a></li>
+                  <li class="menu-dropdown__item"><a href="#" class="menu-dropdown__link">Название раздела</a></li>
+                  <li class="menu-dropdown__item"><a href="#" class="menu-dropdown__link">Название раздела</a></li>
+                </ul>
+              </div>
             </li>
           </ul>
         </nav>
@@ -259,13 +280,13 @@
     <div class="container">
       <div class="w-100">
         <div class="row align-items-end">
-          <div class="col-5 col-lg-7 mb-40">
+          <div class="col-5 col-lg-7 col-md-8 mb-40">
             <div class="subtitle-text">Наши услуги</div>
             <h2 class="m-0">Всё для вашей красоты
               и гармонии</h2>
           </div>
 
-          <div class="col-7 col-lg-12 mb-40">
+          <div class="col-7 col-lg-12 mb-40 mb-md-10">
             <ul class="tabs tabs-services my-ul">
               <li class="tabs-item"><a href="#tab1" class="tabs-link">
                   <span class="tabs-link__icon"><img src="img/category-img1.png" alt=""></span>
@@ -304,6 +325,7 @@
                           <p>Гармонизирует тело и разум, снимает усталость, улучшает кровообращение и общее
                             самочувствие. Идеален после напряжённого дня.</p>
                         </div>
+                        <div class="price">от 3 500 ₽</div>
                         <div class="btn-group btn-group-column">
                           <a href="#" class="btn btn-grey btn-md w-100">Записаться</a>
                           <a href="#" class="btn btn-border btn-md w-100">Подробнее</a>
@@ -324,6 +346,7 @@
                           <p>Базовая техника для расслабления мышц, снятия напряжения и профилактики болей. Подходит
                             каждому, кто хочет заботиться о теле регулярно.</p>
                         </div>
+                        <div class="price">от 3 500 ₽</div>
                         <div class="btn-group btn-group-column">
                           <a href="#" class="btn btn-grey btn-md w-100">Записаться</a>
                           <a href="#" class="btn btn-border btn-md w-100">Подробнее</a>
@@ -344,6 +367,7 @@
                           <p>Глубокая проработка мышц для восстановления после физической нагрузки. Повышает
                             выносливость и снижает риск травм.</p>
                         </div>
+                        <div class="price">от 3 500 ₽</div>
                         <div class="btn-group btn-group-column">
                           <a href="#" class="btn btn-grey btn-md w-100">Записаться</a>
                           <a href="#" class="btn btn-border btn-md w-100">Подробнее</a>
@@ -364,6 +388,7 @@
                           <p>Комплексные ритуалы ухода и расслабления: ароматы, текстуры и прикосновения, которые
                             переносят вас в мир покоя и красоты.</p>
                         </div>
+                        <div class="price">от 3 500 ₽</div>
                         <div class="btn-group btn-group-column">
                           <a href="#" class="btn btn-grey btn-md w-100">Записаться</a>
                           <a href="#" class="btn btn-border btn-md w-100">Подробнее</a>
@@ -384,6 +409,7 @@
                           <p>Гармонизирует тело и разум, снимает усталость, улучшает кровообращение и общее
                             самочувствие. Идеален после напряжённого дня.</p>
                         </div>
+                        <div class="price">от 3 500 ₽</div>
                         <div class="btn-group btn-group-column">
                           <a href="#" class="btn btn-grey btn-md w-100">Записаться</a>
                           <a href="#" class="btn btn-border btn-md w-100">Подробнее</a>
@@ -407,6 +433,7 @@
                           <p>Базовая техника для расслабления мышц, снятия напряжения и профилактики болей. Подходит
                             каждому, кто хочет заботиться о теле регулярно.</p>
                         </div>
+                        <div class="price">от 3 500 ₽</div>
                         <div class="btn-group btn-group-column">
                           <a href="#" class="btn btn-grey btn-md w-100">Записаться</a>
                           <a href="#" class="btn btn-border btn-md w-100">Подробнее</a>
@@ -414,7 +441,6 @@
                       </div>
                     </div>
                   </div>
-
 
                   <div class="slide">
                     <div class="services-card">
@@ -428,6 +454,7 @@
                           <p>Гармонизирует тело и разум, снимает усталость, улучшает кровообращение и общее
                             самочувствие. Идеален после напряжённого дня.</p>
                         </div>
+                        <div class="price">от 3 500 ₽</div>
                         <div class="btn-group btn-group-column">
                           <a href="#" class="btn btn-grey btn-md w-100">Записаться</a>
                           <a href="#" class="btn btn-border btn-md w-100">Подробнее</a>
@@ -448,6 +475,7 @@
                           <p>Базовая техника для расслабления мышц, снятия напряжения и профилактики болей. Подходит
                             каждому, кто хочет заботиться о теле регулярно.</p>
                         </div>
+                        <div class="price">от 3 500 ₽</div>
                         <div class="btn-group btn-group-column">
                           <a href="#" class="btn btn-grey btn-md w-100">Записаться</a>
                           <a href="#" class="btn btn-border btn-md w-100">Подробнее</a>
@@ -468,6 +496,7 @@
                           <p>Глубокая проработка мышц для восстановления после физической нагрузки. Повышает
                             выносливость и снижает риск травм.</p>
                         </div>
+                        <div class="price">от 3 500 ₽</div>
                         <div class="btn-group btn-group-column">
                           <a href="#" class="btn btn-grey btn-md w-100">Записаться</a>
                           <a href="#" class="btn btn-border btn-md w-100">Подробнее</a>
@@ -488,6 +517,7 @@
                           <p>Комплексные ритуалы ухода и расслабления: ароматы, текстуры и прикосновения, которые
                             переносят вас в мир покоя и красоты.</p>
                         </div>
+                        <div class="price">от 3 500 ₽</div>
                         <div class="btn-group btn-group-column">
                           <a href="#" class="btn btn-grey btn-md w-100">Записаться</a>
                           <a href="#" class="btn btn-border btn-md w-100">Подробнее</a>
@@ -508,6 +538,7 @@
                           <p>Гармонизирует тело и разум, снимает усталость, улучшает кровообращение и общее
                             самочувствие. Идеален после напряжённого дня.</p>
                         </div>
+                        <div class="price">от 3 500 ₽</div>
                         <div class="btn-group btn-group-column">
                           <a href="#" class="btn btn-grey btn-md w-100">Записаться</a>
                           <a href="#" class="btn btn-border btn-md w-100">Подробнее</a>
@@ -521,6 +552,27 @@
                 <div class="services-slider slider-stretch">
                   <div class="slide">
                     <div class="services-card">
+                      <a href="services.html" class="services-card__img"><img src="img/product2.jpg" alt=""></a>
+                      <div class="services-card__body">
+                        <div class="services-card__row">
+                          <a href="service.html" class="services-card__name">Классический массаж</a>
+                          <div class="price">от 3 500 ₽</div>
+                        </div>
+                        <div class="box-text">
+                          <p>Базовая техника для расслабления мышц, снятия напряжения и профилактики болей. Подходит
+                            каждому, кто хочет заботиться о теле регулярно.</p>
+                        </div>
+                        <div class="price">от 3 500 ₽</div>
+                        <div class="btn-group btn-group-column">
+                          <a href="#" class="btn btn-grey btn-md w-100">Записаться</a>
+                          <a href="#" class="btn btn-border btn-md w-100">Подробнее</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="slide">
+                    <div class="services-card">
                       <a href="services.html" class="services-card__img"><img src="img/product1.jpg" alt=""></a>
                       <div class="services-card__body">
                         <div class="services-card__row">
@@ -531,6 +583,7 @@
                           <p>Гармонизирует тело и разум, снимает усталость, улучшает кровообращение и общее
                             самочувствие. Идеален после напряжённого дня.</p>
                         </div>
+                        <div class="price">от 3 500 ₽</div>
                         <div class="btn-group btn-group-column">
                           <a href="#" class="btn btn-grey btn-md w-100">Записаться</a>
                           <a href="#" class="btn btn-border btn-md w-100">Подробнее</a>
@@ -551,6 +604,7 @@
                           <p>Базовая техника для расслабления мышц, снятия напряжения и профилактики болей. Подходит
                             каждому, кто хочет заботиться о теле регулярно.</p>
                         </div>
+                        <div class="price">от 3 500 ₽</div>
                         <div class="btn-group btn-group-column">
                           <a href="#" class="btn btn-grey btn-md w-100">Записаться</a>
                           <a href="#" class="btn btn-border btn-md w-100">Подробнее</a>
@@ -571,6 +625,7 @@
                           <p>Глубокая проработка мышц для восстановления после физической нагрузки. Повышает
                             выносливость и снижает риск травм.</p>
                         </div>
+                        <div class="price">от 3 500 ₽</div>
                         <div class="btn-group btn-group-column">
                           <a href="#" class="btn btn-grey btn-md w-100">Записаться</a>
                           <a href="#" class="btn btn-border btn-md w-100">Подробнее</a>
@@ -591,6 +646,7 @@
                           <p>Комплексные ритуалы ухода и расслабления: ароматы, текстуры и прикосновения, которые
                             переносят вас в мир покоя и красоты.</p>
                         </div>
+                        <div class="price">от 3 500 ₽</div>
                         <div class="btn-group btn-group-column">
                           <a href="#" class="btn btn-grey btn-md w-100">Записаться</a>
                           <a href="#" class="btn btn-border btn-md w-100">Подробнее</a>
@@ -611,6 +667,7 @@
                           <p>Гармонизирует тело и разум, снимает усталость, улучшает кровообращение и общее
                             самочувствие. Идеален после напряжённого дня.</p>
                         </div>
+                        <div class="price">от 3 500 ₽</div>
                         <div class="btn-group btn-group-column">
                           <a href="#" class="btn btn-grey btn-md w-100">Записаться</a>
                           <a href="#" class="btn btn-border btn-md w-100">Подробнее</a>
@@ -620,8 +677,30 @@
                   </div>
                 </div>
               </div>
+
               <div id="tab4" class="tab_content">
                 <div class="services-slider slider-stretch">
+                  <div class="slide">
+                    <div class="services-card">
+                      <a href="services.html" class="services-card__img"><img src="img/product2.jpg" alt=""></a>
+                      <div class="services-card__body">
+                        <div class="services-card__row">
+                          <a href="service.html" class="services-card__name">Классический массаж</a>
+                          <div class="price">от 3 500 ₽</div>
+                        </div>
+                        <div class="box-text">
+                          <p>Базовая техника для расслабления мышц, снятия напряжения и профилактики болей. Подходит
+                            каждому, кто хочет заботиться о теле регулярно.</p>
+                        </div>
+                        <div class="price">от 3 500 ₽</div>
+                        <div class="btn-group btn-group-column">
+                          <a href="#" class="btn btn-grey btn-md w-100">Записаться</a>
+                          <a href="#" class="btn btn-border btn-md w-100">Подробнее</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                   <div class="slide">
                     <div class="services-card">
                       <a href="services.html" class="services-card__img"><img src="img/product1.jpg" alt=""></a>
@@ -634,6 +713,7 @@
                           <p>Гармонизирует тело и разум, снимает усталость, улучшает кровообращение и общее
                             самочувствие. Идеален после напряжённого дня.</p>
                         </div>
+                        <div class="price">от 3 500 ₽</div>
                         <div class="btn-group btn-group-column">
                           <a href="#" class="btn btn-grey btn-md w-100">Записаться</a>
                           <a href="#" class="btn btn-border btn-md w-100">Подробнее</a>
@@ -654,6 +734,7 @@
                           <p>Базовая техника для расслабления мышц, снятия напряжения и профилактики болей. Подходит
                             каждому, кто хочет заботиться о теле регулярно.</p>
                         </div>
+                        <div class="price">от 3 500 ₽</div>
                         <div class="btn-group btn-group-column">
                           <a href="#" class="btn btn-grey btn-md w-100">Записаться</a>
                           <a href="#" class="btn btn-border btn-md w-100">Подробнее</a>
@@ -674,6 +755,7 @@
                           <p>Глубокая проработка мышц для восстановления после физической нагрузки. Повышает
                             выносливость и снижает риск травм.</p>
                         </div>
+                        <div class="price">от 3 500 ₽</div>
                         <div class="btn-group btn-group-column">
                           <a href="#" class="btn btn-grey btn-md w-100">Записаться</a>
                           <a href="#" class="btn btn-border btn-md w-100">Подробнее</a>
@@ -694,6 +776,7 @@
                           <p>Комплексные ритуалы ухода и расслабления: ароматы, текстуры и прикосновения, которые
                             переносят вас в мир покоя и красоты.</p>
                         </div>
+                        <div class="price">от 3 500 ₽</div>
                         <div class="btn-group btn-group-column">
                           <a href="#" class="btn btn-grey btn-md w-100">Записаться</a>
                           <a href="#" class="btn btn-border btn-md w-100">Подробнее</a>
@@ -714,6 +797,7 @@
                           <p>Гармонизирует тело и разум, снимает усталость, улучшает кровообращение и общее
                             самочувствие. Идеален после напряжённого дня.</p>
                         </div>
+                        <div class="price">от 3 500 ₽</div>
                         <div class="btn-group btn-group-column">
                           <a href="#" class="btn btn-grey btn-md w-100">Записаться</a>
                           <a href="#" class="btn btn-border btn-md w-100">Подробнее</a>
@@ -736,7 +820,7 @@
     <div class="container">
       <div class="w-100">
         <div class="row">
-          <div class="col-7">
+          <div class="col-7 col-md-8">
             <div class="subtitle-text">Почему мы</div>
             <h2>5 причин влюбиться в наш
               спа с первого взгляда</h2>
@@ -811,12 +895,12 @@
     <div class="container">
       <div class="w-100">
         <div class="row align-items-end">
-          <div class="col-7 mb-40">
+          <div class="col-7 col-md-8 mb-40">
             <div class="subtitle-text">Акции</div>
             <h2 class="m-0">Специальные предложения
               для наших клиентов</h2>
           </div>
-          <div class="col-5 mb-40">
+          <div class="col-5 col-md-4 mb-40">
             <div class="slider-arrows sales-slider__arrows justify-end"></div>
           </div>
         </div>
