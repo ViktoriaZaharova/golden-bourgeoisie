@@ -551,6 +551,28 @@
     height: 36px;
     min-width: 36px;
   }
+  .author-section__photo {
+    display: none;
+  }
+  .author-section__bg {
+    max-width: 206px;
+  }
+  .author-section__bg img.d-pc {
+    display: none;
+  }
+  .author-section__bg img.d-none {
+    display: block;
+  }
+  .author-section__content {
+    margin: 0;
+    padding: 40px;
+    max-width: none;
+    width: calc(100% - 206px);
+  }
+  .footer-contacts {
+    min-width: auto;
+    max-width: 282px;
+  }
 }
 @media only screen and (max-width: 920px) {
   .user-navigation__item {
@@ -620,6 +642,16 @@
   .contact-link__icon {
     margin: 0 8px 0 0;
   }
+  .phone-link {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .contact-link {
+    margin: 0 0 20px;
+  }
+  .contact-link:last-child {
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 768px) {
   .btn {
@@ -634,10 +666,14 @@
   h2, .h2 {
     font-size: 30px;
     line-height: 38px;
+    margin: 0 0 30px;
   }
   h3, .h3 {
     font-size: 26px;
     line-height: 34px;
+  }
+  .m-0 {
+    margin: 0;
   }
   .subtitle-text {
     font-size: 13px;
@@ -683,9 +719,7 @@
   .row, .slider-stretch .slick-list {
     margin: 0 -7px;
   }
-  .col-md-8 {
-    flex: 0 0 66.6667%;
-    max-width: 66.6667%;
+  .col-6, .col-12, .col-5, .col-7 {
     padding: 0 7px;
   }
   .col-md-4 {
@@ -693,14 +727,44 @@
     max-width: 33.3333%;
     padding: 0 7px;
   }
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 7px;
+  }
+  .col-md-8 {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+    padding: 0 7px;
+  }
+  .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 7px;
+  }
   .mb-40 {
     margin-bottom: 30px;
+  }
+  .mb-18 {
+    margin-bottom: 12px;
   }
   .mb-md-10 {
     margin-bottom: 10px;
   }
+  .mt-md-40 {
+    margin-top: 40px;
+  }
   .m-150 {
     margin: 100px 0;
+  }
+  .p-120 {
+    padding: 60px 0;
+  }
+  .p-150 {
+    padding: 100px 0;
+  }
+  .order-md-1 {
+    order: 1;
   }
   .btn {
     height: 42px;
@@ -802,5 +866,105 @@
   .old-price {
     font-size: 13px;
     margin: 0 0 0 6px;
+  }
+  .results-card {
+    padding: 14px;
+  }
+  .results-card__photo {
+    height: 210px !important;
+  }
+  .results-card__body {
+    height: calc(100% - 210px);
+    padding: 14px 0 0;
+  }
+  .results-card__name {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .results-card ul {
+    margin: 0 0 14px;
+  }
+  .twentytwenty-after-label, .twentytwenty-before-label {
+    bottom: 12px;
+  }
+  .twentytwenty-after-label::before, .twentytwenty-before-label::before {
+    padding: 4px 12px;
+  }
+  .twentytwenty-before-label {
+    left: 12px;
+  }
+  .twentytwenty-after-label {
+    right: 12px;
+  }
+  .twentytwenty-handle {
+    width: 48px;
+    height: 48px;
+    margin-top: -24px;
+    margin-left: -24px;
+  }
+  .twentytwenty-left-arrow, .twentytwenty-right-arrow {
+    width: 10px;
+    height: 16px;
+  }
+  .twentytwenty-left-arrow {
+    left: 8px;
+  }
+  .twentytwenty-right-arrow {
+    right: 8px;
+  }
+  .specialists-card__photo {
+    height: 220px;
+  }
+  .specialists-card__body {
+    height: calc(100% - 220px);
+    padding: 12px 0 0;
+  }
+  .specialists-card__name {
+    font-size: 17px;
+    line-height: 24px;
+  }
+  .specialists-card__list {
+    margin: 10px 0;
+  }
+  .certificate-section h2 {
+    margin: 0 0 20px;
+  }
+  .certificate-section .col-6 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .certificate-section__content {
+    padding: 0 20px 0 0;
+  }
+  .certificate-section .wrapper-content {
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .certificate-slider {
+    margin: 18px 0 0;
+  }
+  .certificate-slider__item {
+    height: 328px;
+  }
+  .callback-section h2 {
+    margin: 0 0 14px;
+  }
+  .callback-section form {
+    margin: 30px 0 0;
+  }
+  .callback-section .wrapper-content {
+    max-width: 407px;
+  }
+  input, textarea, select {
+    height: 48px;
+  }
+  form [type=submit] {
+    height: 46px;
+  }
+  .consent {
+    margin: 10px 0 0;
   }
 }

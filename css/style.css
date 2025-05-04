@@ -457,6 +457,10 @@ h3, .h3 {
   justify-content: flex-end;
 }
 
+.d-none {
+  display: none;
+}
+
 .form {
   width: 100%;
 }
