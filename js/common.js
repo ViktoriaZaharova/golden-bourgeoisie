@@ -22,7 +22,14 @@ $('.certificate-slider').slick({
     {
       breakpoint: 576,
       settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 370,
+      settings: {
         slidesToShow: 1,
+        variableWidth: true,
       },
     },
   ],
@@ -49,7 +56,9 @@ $('.specialists-slider').slick({
     {
       breakpoint: 576,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
+        variableWidth: true,
+        arrows: false
       },
     }
   ],
@@ -60,6 +69,7 @@ $('.home-slider').slick({
   fade: true,
   arrows: false,
   dots: true,
+  autoplay: true,
 });
 
 $('.services-slider').slick({
@@ -116,6 +126,9 @@ $('.sales-slider').slick({
       breakpoint: 576,
       settings: {
         slidesToShow: 2,
+        arrows: false,
+        autoplay: true,
+        variableWidth: true,
       },
     },
   ],
@@ -139,6 +152,9 @@ $('.results-slider').slick({
       breakpoint: 576,
       settings: {
         slidesToShow: 1,
+        arrows: false,
+        autoplay: true,
+        // autoplaySpeed: 2000,
       },
     },
   ],
@@ -172,7 +188,7 @@ $(document).ready(function ($) {
 
 
 // twenty twenty
-$(function(){
+$(function () {
   $(".twentytwenty-container").twentytwenty({
     // default_offset_pct: 0.7, // How much of the before image is visible when the page loads
     orientation: 'horizontal', // Orientation of the before and after images ('horizontal' or 'vertical')

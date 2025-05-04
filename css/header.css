@@ -56,6 +56,12 @@ header .location:hover {
 .header-top .mail-link:last-child {
   margin: 0;
 }
+.header-top__column .mail-link {
+  display: none;
+}
+.header-top .header-contacts .list-messenger {
+  display: none;
+}
 
 .header-center {
   padding: 20px 0;

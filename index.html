@@ -28,13 +28,22 @@
   <header>
     <div class="header-top w-100">
       <div class="container align-items-center">
-        <div class="location contact-link">
-          <svg class="svg-icon contact-link__icon">
-            <use xlink:href="img/sprite.svg#location-icon"></use>
-          </svg>
-          <span class="contact-link__text">Краснодар, Дальняя ул., 8, корп. 2
-            <span class="schedule-text">пн-вс: 10:00 - 20:00</span>
-          </span>
+        
+        <div class="header-top__column">
+          <div class="location contact-link">
+            <svg class="svg-icon contact-link__icon">
+              <use xlink:href="img/sprite.svg#location-icon"></use>
+            </svg>
+            <span class="contact-link__text">Краснодар, Дальняя ул., 8, корп. 2
+              <span class="schedule-text">пн-вс: 10:00 - 20:00</span>
+            </span>
+          </div>
+          <a href="mailto:email@mail.ru" class="mail-link contact-link">
+            <svg class="svg-icon contact-link__icon">
+              <use xlink:href="img/sprite.svg#mail-icon"></use>
+            </svg>
+            <span class="contact-link__text">email@mail.ru</span>
+          </a>
         </div>
         <div class="header-contacts">
           <a href="tel:+79890001978" class="phone-link contact-link">
@@ -49,6 +58,26 @@
             </svg>
             <span class="contact-link__text">email@mail.ru</span>
           </a>
+          <ul class="list-messenger my-ul">
+            <li>
+              <a href="#" target="_blank"><svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#whatsapp-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#telegram-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#vk-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
         <ul class="list-messenger my-ul">
           <li>
@@ -219,7 +248,7 @@
     <div class="container">
       <div class="w-100">
         <div class="row">
-          <div class="col-6">
+          <div class="col-6 order-sm-1">
             <div class="home-slider">
               <div class="slide">
                 <div class="home-slider__item">
@@ -900,7 +929,7 @@
             <h2 class="m-0">Специальные предложения
               для наших клиентов</h2>
           </div>
-          <div class="col-5 col-md-4 mb-40">
+          <div class="col-5 col-md-4 mb-40 d-none-mobile">
             <div class="slider-arrows sales-slider__arrows justify-end"></div>
           </div>
         </div>
@@ -1075,7 +1104,7 @@
             <div class="subtitle-text">Результаты клиентов</div>
             <h2 class="m-0">До и после: сила заботы и профессионализма</h2>
           </div>
-          <div class="col-5 col-md-4 mb-40">
+          <div class="col-5 col-md-4 mb-40 d-none-mobile">
             <div class="slider-arrows results-slider__arrows justify-end"></div>
           </div>
         </div>
