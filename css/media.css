@@ -536,9 +536,13 @@
   }
   .dropdown-menu {
     padding: 12px;
+    min-width: 300px;
   }
   .menu-dropdown {
     font-size: 16px;
+  }
+  .menu-dropdown__link {
+    padding: 14px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -1431,6 +1435,34 @@
   .results-slider .slick-slide {
     padding: 0;
   }
+  .mobile-menu {
+    padding: 20px 24px;
+    max-width: 350px;
+  }
+  .mobile-menu__head {
+    margin: 0 0 36px;
+  }
+  .mobile-menu__close {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+  }
+  .menu-mobile__item {
+    margin: 0 0 22px;
+  }
+  .menu-mobile__item:last-child {
+    margin: 0;
+  }
+  .menu-mobile__link {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .mobile-menu .contact-link {
+    font-size: 14px;
+  }
+  .mobile-menu .phone-link {
+    font-size: 15px;
+  }
 }
 @media only screen and (max-width: 440px) {
   .header-top {
@@ -1734,6 +1766,74 @@
   }
   .btn-callback {
     margin: 24px 0 0;
+  }
+  .menu-mobile__link {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .menu-mobile__link::after {
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    margin: 0 0 0 8px;
+  }
+  .menu-mobile__item {
+    margin: 0 0 20px;
+  }
+  .menu-mobile__item:last-child {
+    margin: 0;
+  }
+  .mobile-menu {
+    max-width: 280px;
+    padding: 14px 16px;
+  }
+  .mobile-menu__head {
+    margin: 0 0 26px;
+  }
+  .mobile-menu__close {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    padding: 10px;
+  }
+  .mobile-menu .mail-link {
+    display: none;
+  }
+  .mobile-menu .phone-link {
+    font-size: 14px;
+  }
+  .link-step-menu {
+    line-height: 18px;
+    font-size: 13px;
+    margin: 0 0 18px;
+  }
+  .dropdown-mobile-submenu {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .dropdown-mobile-submenu li {
+    margin: 0 0 16px;
+  }
+  .dropdown-mobile-submenu li:last-child {
+    margin: 0;
+  }
+  .mobile-menu .list-messenger {
+    margin: 12px 0 0;
+  }
+  .mobile-menu .list-messenger li {
+    margin: 0 8px 0 0;
+  }
+  .mobile-menu .list-messenger li:last-child {
+    margin: 0;
+  }
+  .mobile-menu .list-messenger li a {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    padding: 8px;
+  }
+  .mobile-menu .btn-callback {
+    margin: 12px 0 0;
   }
 }
 @media only screen and (max-width: 330px) {

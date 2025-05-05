@@ -201,3 +201,26 @@ $(function () {
     click_to_move: false // Allow a user to click (or tap) anywhere on the image to move the slider to that location.
   });
 });
+
+// mobile menu
+$('.dropdown-mobile__link').on('click', function (e) {
+  e.preventDefault();
+  $('.dropdown-mobile__wrapper').fadeIn();
+});
+
+$('.link-step-menu').on('click', function (e) {
+  e.preventDefault();
+  $('.dropdown-mobile__wrapper').fadeOut();
+});
+
+$('.menu-link__burger, .btn-burger').on('click', function (e) {
+  e.preventDefault();
+  $('.overlay').fadeIn();
+  $('.mobile-menu').css('left', '0');
+});
+
+$('.mobile-menu__close, .overlay').on('click', function (e) {
+  e.preventDefault();
+  $('.mobile-menu').css('left', '-100%');
+  $('.overlay').fadeOut();
+});

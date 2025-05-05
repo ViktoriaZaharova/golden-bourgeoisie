@@ -496,9 +496,12 @@
 
   .dropdown-menu
     padding: 12px
+    min-width: 300px
 
   .menu-dropdown
     font-size: 16px
+    &__link
+      padding: 14px
 
 @media only screen and (max-width: 992px)
   .tabs
@@ -1304,6 +1307,31 @@
     .slick-slide
       padding: 0
 
+  .mobile-menu
+    padding: 20px 24px
+    max-width: 350px
+    &__head
+      margin: 0 0 36px
+    &__close
+      width: 52px
+      height: 52px
+      min-width: 52px
+
+  .menu-mobile__item
+    margin: 0 0 22px
+    &:last-child
+      margin: 0
+
+  .menu-mobile__link
+    font-size: 16px
+    line-height: 26px
+
+  .mobile-menu .contact-link
+    font-size: 14px
+
+  .mobile-menu .phone-link
+    font-size: 15px
+
 @media only screen and (max-width: 440px)
   .header-top
     padding: 8px 0
@@ -1414,7 +1442,7 @@
     padding: 70px 0
 
   .mt-md-40
-    margin-top: 36px      
+    margin-top: 36px
 
   .box-text
     font-size: 14px
@@ -1423,7 +1451,7 @@
   input, textarea, select
     height: 42px
     font-size: 14px
-    line-height: 20px    
+    line-height: 20px
 
   .container
     padding: 0 6px
@@ -1560,10 +1588,9 @@
     &__list
       font-size: 14px
       line-height: 21px
-      
-  .certificate-section .wrapper-content .box-text
-    padding: 0    
 
+  .certificate-section .wrapper-content .box-text
+    padding: 0
 
   .certificate-slider__item
     height: 295px
@@ -1573,7 +1600,7 @@
     max-width: 328px
 
   .callback-section .form
-    margin: 26px 0 0  
+    margin: 26px 0 0
 
   form [type=submit]
     height: 42px
@@ -1582,7 +1609,64 @@
     max-width: none
 
   .btn-callback
-    margin: 24px 0 0    
+    margin: 24px 0 0
+
+  .menu-mobile__link
+    font-size: 14px
+    line-height: 22px
+    &::after
+      width: 18px
+      height: 18px
+      min-width: 18px
+      margin: 0 0 0 8px
+
+  .menu-mobile__item
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+
+  .mobile-menu
+    max-width: 280px
+    padding: 14px 16px
+    &__head
+      margin: 0 0 26px
+    &__close
+      width: 48px
+      height: 48px
+      min-width: 48px
+      padding: 10px
+    .mail-link
+      display: none
+    .phone-link
+      font-size: 14px  
+
+  .link-step-menu
+    line-height: 18px
+    font-size: 13px
+    margin: 0 0 18px
+
+  .dropdown-mobile-submenu
+    font-size: 15px
+    line-height: 22px
+    li
+      margin: 0 0 16px
+      &:last-child
+        margin: 0
+
+  .mobile-menu .list-messenger
+    margin: 12px 0 0
+    li
+      margin: 0 8px 0 0
+      &:last-child
+        margin: 0
+      a
+        width: 30px
+        height: 30px
+        min-width: 30px
+        padding: 8px
+
+  .mobile-menu .btn-callback
+    margin: 12px 0 0
 
 @media only screen and (max-width: 330px)
   .header-top .contact-link
