@@ -1425,6 +1425,12 @@
     font-size: 14px;
     line-height: 19px;
   }
+  .results-slider .slick-list {
+    margin: 0;
+  }
+  .results-slider .slick-slide {
+    padding: 0;
+  }
 }
 @media only screen and (max-width: 440px) {
   .header-top {
@@ -1537,6 +1543,33 @@
   .m-150 {
     margin: 70px 0;
   }
+  .p-120 {
+    padding: 30px 0;
+  }
+  .p-150 {
+    padding: 70px 0;
+  }
+  .mt-md-40 {
+    margin-top: 36px;
+  }
+  .box-text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  input, textarea, select {
+    height: 42px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .container {
+    padding: 0 6px;
+  }
+  .row {
+    margin: 0 -6px;
+  }
+  .col-6, .col-7, .col-5, .col-4, .col-12, .col-8 {
+    padding: 0 6px;
+  }
   .services-section {
     margin: 70px 0;
   }
@@ -1624,9 +1657,83 @@
   }
   .sale-card__body {
     height: calc(100% - 198px);
+    padding: 12px 0 0;
   }
   .sale-card__name {
     font-size: 17px;
+  }
+  .author-section__content {
+    padding: 30px 16px;
+  }
+  .author-signature {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  blockquote {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0 0 0 24px;
+  }
+  blockquote::before {
+    font-size: 50px;
+    line-height: 28px;
+  }
+  .results-card {
+    padding: 12px;
+  }
+  .results-card__photo {
+    height: 190px !important;
+  }
+  .results-card__body {
+    height: calc(100% - 190px);
+  }
+  .results-card__name {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  .results-card__list {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .twentytwenty-handle {
+    width: 42px;
+    height: 42px;
+    margin-top: -21px;
+    margin-left: -21px;
+  }
+  .twentytwenty-left-arrow, .twentytwenty-right-arrow {
+    width: 8px;
+    height: 14px;
+  }
+  .specialists-card__name {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .specialists-card__list {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .certificate-section .wrapper-content .box-text {
+    padding: 0;
+  }
+  .certificate-slider__item {
+    height: 295px;
+    padding: 20px;
+  }
+  .callback-section .wrapper-content {
+    max-width: 328px;
+  }
+  .callback-section .form {
+    margin: 26px 0 0;
+  }
+  form [type=submit] {
+    height: 42px;
+  }
+  .footer-contacts {
+    max-width: none;
+  }
+  .btn-callback {
+    margin: 24px 0 0;
   }
 }
 @media only screen and (max-width: 330px) {

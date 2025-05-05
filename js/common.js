@@ -26,10 +26,11 @@ $('.certificate-slider').slick({
       },
     },
     {
-      breakpoint: 370,
+      breakpoint: 440,
       settings: {
         slidesToShow: 1,
         variableWidth: true,
+        arrows: false
       },
     },
   ],
