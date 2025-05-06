@@ -540,3 +540,74 @@
 .callback-section .form {
   margin: 40px 0 0;
 }
+
+.home-cosmetology {
+  margin: 40px 0 0;
+}
+.home-cosmetology__wrapper {
+  width: 100%;
+  background: url("../img/cosmetology-home-bg.jpg") no-repeat center;
+  background-size: cover;
+  padding: 62px;
+  margin: 0 0 34px;
+}
+.home-cosmetology__content {
+  max-width: 740px;
+  width: 100%;
+}
+.home-cosmetology h1 {
+  margin: 0 0 22px;
+}
+.home-cosmetology .box-text {
+  margin: 20px 0 160px;
+  font-size: 20px;
+  line-height: 28px;
+}
+.home-cosmetology .price {
+  margin: 0 0 32px;
+}
+.home-cosmetology .new-price {
+  line-height: 44px;
+  font-size: 38px;
+}
+.home-cosmetology .old-price {
+  line-height: 44px;
+  font-size: 20px;
+}
+
+.navigation-services {
+  margin: 0 0 100px;
+}
+
+.navigation-services-menu {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.navigation-services-menu li {
+  margin: 0 12px 12px 0;
+}
+.navigation-services-menu li:last-child {
+  margin: 0;
+}
+.navigation-services-menu li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #D6D6D6;
+  border-radius: 60px;
+  padding: 14px 46px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #414141;
+}
+.navigation-services-menu li a:hover {
+  color: #fff;
+  background: #414141;
+}
+
+.referral-services {
+  margin: 0 0 150px;
+}

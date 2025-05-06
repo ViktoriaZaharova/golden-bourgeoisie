@@ -136,6 +136,12 @@ button, .btn
   height: 64px
   border-radius: 0
   transition: 0.3s ease
+  .svg-icon
+    margin: 0 0 0 10px
+    width: 24px
+    height: 21px
+    min-width: 24px
+    @include d-flex
 
 .btn-group
   width: 100%
@@ -178,9 +184,13 @@ button, .btn
   border: 1px solid $grey
   background: transparent
   color: $grey
+  .svg-icon
+    fill: $grey
   &:hover, &:focus
     background: $grey
     color: #fff
+    .svg-icon
+      fill: #fff
 
 .svg-icon
   display: inline-block
@@ -278,7 +288,7 @@ h3, .h3
   margin-left: auto
 
 .mt-40
-  margin-top: 40px  
+  margin-top: 40px
 
 .fz-20
   font-size: 20px
@@ -341,7 +351,34 @@ h3, .h3
   justify-content: flex-end
 
 .d-none
-  display: none  
+  display: none
+
+.nav-breadcrumb
+  width: 100%
+  margin: 0 0 46px
+
+.breadcrumb
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  font-size: 15px
+  line-height: 20px
+  font-weight: 300
+  color: $grey
+  li
+    a
+      display: flex
+      align-items: center
+      color: $grey
+      &::after
+        content: '/'
+        display: inline-block
+        margin: 0 6px
+      &:hover
+        color: $accent  
+    span
+      opacity: 0.5
 
 .form
   width: 100%
@@ -590,7 +627,7 @@ blockquote
   position: relative
   letter-spacing: 0
 
-.twentytwenty-horizontal .twentytwenty-before-label:before, .twentytwenty-horizontal .twentytwenty-after-label:before  
+.twentytwenty-horizontal .twentytwenty-before-label:before, .twentytwenty-horizontal .twentytwenty-after-label:before
   margin: 0
   top: auto
   left: 0
@@ -630,7 +667,7 @@ blockquote
   transform: translateY(-50%)
 
 .twentytwenty-horizontal .twentytwenty-handle:before, .twentytwenty-horizontal .twentytwenty-handle:after
-  width: 2px  
+  width: 2px
 
 //checkbox my
 .label-checkbox

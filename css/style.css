@@ -43,6 +43,13 @@
 }
 @font-face {
   font-family: "CormorantGaramond";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/CormorantGaramond/CormorantGaramond-Regular.eot");
+  src: url("../fonts/CormorantGaramond/CormorantGaramond-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/CormorantGaramond/CormorantGaramond-Regular.woff") format("woff"), url("../fonts/CormorantGaramond/CormorantGaramond-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "CormorantGaramond";
   font-weight: 700;
   font-style: normal;
   src: url("../fonts/CormorantGaramond/CormorantGaramond-Bold.eot");
@@ -205,6 +212,15 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   border-radius: 0;
   transition: 0.3s ease;
 }
+.btn .svg-icon {
+  margin: 0 0 0 10px;
+  width: 24px;
+  height: 21px;
+  min-width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .btn-group {
   width: 100%;
@@ -259,9 +275,15 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   background: transparent;
   color: #414141;
 }
+.btn-border .svg-icon {
+  fill: #414141;
+}
 .btn-border:hover, .btn-border:focus {
   background: #414141;
   color: #fff;
+}
+.btn-border:hover .svg-icon, .btn-border:focus .svg-icon {
+  fill: #fff;
 }
 
 .svg-icon {
@@ -459,6 +481,38 @@ h3, .h3 {
 
 .d-none {
   display: none;
+}
+
+.nav-breadcrumb {
+  width: 100%;
+  margin: 0 0 46px;
+}
+
+.breadcrumb {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #414141;
+}
+.breadcrumb li a {
+  display: flex;
+  align-items: center;
+  color: #414141;
+}
+.breadcrumb li a::after {
+  content: "/";
+  display: inline-block;
+  margin: 0 6px;
+}
+.breadcrumb li a:hover {
+  color: #CBAA65;
+}
+.breadcrumb li span {
+  opacity: 0.5;
 }
 
 .form {
