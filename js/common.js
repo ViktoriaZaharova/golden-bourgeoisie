@@ -155,10 +155,17 @@ $('.results-slider').slick({
         slidesToShow: 1,
         arrows: false,
         autoplay: true,
-        // autoplaySpeed: 2000,
+        autoplaySpeed: 2000,
       },
     },
   ],
+});
+
+$('.video-gallery-slider').slick({
+  slidesToShow: 3,
+  appendArrows: '.video-gallery-slider__arrows',
+  prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+  nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
 });
 
 // Fancybox
@@ -191,13 +198,9 @@ $(document).ready(function ($) {
 // twenty twenty
 $(function () {
   $(".twentytwenty-container").twentytwenty({
-    // default_offset_pct: 0.7, // How much of the before image is visible when the page loads
     orientation: 'horizontal', // Orientation of the before and after images ('horizontal' or 'vertical')
     before_label: 'До', // Set a custom before label
     after_label: 'После', // Set a custom after label
-    // no_overlay: true, //Do not show the overlay with before and after
-    // move_slider_on_hover: true, // Move slider on mouse hover?
-    // move_with_handle_only: true, // Allow a user to swipe anywhere on the image to control slider movement. 
     click_to_move: false // Allow a user to click (or tap) anywhere on the image to move the slider to that location.
   });
 });
@@ -224,3 +227,19 @@ $('.mobile-menu__close, .overlay').on('click', function (e) {
   $('.mobile-menu').css('left', '-100%');
   $('.overlay').fadeOut();
 });
+
+
+// accordeon
+function accordeon() {
+  var panel = $('.panel_heading');
+
+  if (panel.hasClass('in')) {
+    $('.in').find('.block_hover').slideDown();
+  }
+
+  $('.panel_heading .block_title').on('click', function () {
+    $(this).parent().toggleClass('in').find('.block_hover').slideToggle();
+  });
+}
+
+accordeon();

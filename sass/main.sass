@@ -148,7 +148,7 @@
       object-fit: cover
   .price
     white-space: nowrap
-    display: none    
+    display: none
   &__body
     width: 100%
     height: calc( 100% - 396px )
@@ -177,7 +177,6 @@
     font-size: 16px
     font-weight: 300
     line-height: 22px
-  
 
 .price
   line-height: 24px
@@ -411,7 +410,6 @@
       max-width: 0 0 20px
       max-width: 575px
       width: 100%
-      
 
 .certificate-slider
   &__arrows
@@ -450,24 +448,24 @@
   &__content
     max-width: 740px
     width: 100%
-    
+
   h1
     margin: 0 0 22px
   .box-text
     margin: 20px 0 160px
     font-size: 20px
-    line-height: 28px    
+    line-height: 28px
   .price
     margin: 0 0 32px
-  .new-price  
-    line-height: 44px   
+  .new-price
+    line-height: 44px
     font-size: 38px
   .old-price
-    line-height: 44px   
+    line-height: 44px
     font-size: 20px
 
 .navigation-services
-  margin: 0 0 100px    
+  margin: 0 0 100px
 
 .navigation-services-menu
   width: 100%
@@ -489,9 +487,119 @@
       color: $grey
       &:hover
         color: #fff
-        background: $grey       
+        background: $grey
 
 .referral-services
   margin: 0 0 150px
-  
+  &__content
+    width: 100%
+  &__img
+    width: 100%
+    height: 100%
+    @include d-flex
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
 
+.blockquote-services
+  width: 100%
+  padding: 42px
+  background: #FAF9F2
+  .box-text
+    position: relative
+    z-index: 1
+    display: flex
+    align-items: flex-start
+    &::before
+      content: '“'
+      opacity: 0.2
+      color: $grey
+      width: 29px
+      height: 34px
+      font-size: 78px
+      line-height: 34px
+      font-family: $title-font
+      font-weight: bold
+      margin: 2px 6px 0 0
+      @include d-flex
+
+.blockquote-author
+  margin: 32px 0 0
+  display: flex
+  align-items: center
+  &__photo
+    border-radius: 50%
+    overflow: hidden
+    width: 56px
+    height: 56px
+    min-width: 56px
+    margin: 0 8px 0 0
+  &__text
+    font-weight: 300
+    font-size: 18px
+    line-height: 24px
+    strong
+      display: block
+      font-weight: normal
+      margin: 0 0 8px
+
+.btn-all-prices
+  max-width: 347px
+  margin: 32px auto 0
+
+.attention-info
+  max-width: 1158px
+  width: 100%
+  margin: 24px 0 0
+  position: relative
+  z-index: 1
+  font-size: 16px
+  line-height: 22px
+  font-weight: 300
+  padding: 0 0 0 38px
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 24px
+    height: 24px
+    background: url('../img/attention-icon.svg') no-repeat center
+    background-size: 100%
+
+.quesion-section
+  .panel_heading
+    min-height: 144px
+    margin: 0
+    h3
+      font-family: $default-font
+      font-weight: 500
+      font-size: 26px
+      line-height: 38px
+
+.video-gallery-slider__item
+  width: 100%
+  height: 100%
+  background: #FAF9F2
+  padding: 18px
+  position: relative
+  z-index: 1
+  &::before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 78px
+    height: 58px
+    background: url('../img/play-icon.svg') no-repeat center
+    background-size: 100%
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover  
+
+.btn-order-certificate
+  margin: 36px 0 0
+  max-width: 347px    

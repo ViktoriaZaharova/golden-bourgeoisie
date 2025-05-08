@@ -211,6 +211,30 @@ ul, ol
 .list-dots
   list-style-type: disc
 
+.list-decor
+  margin: 0 0 24px
+  &:last-child
+    margin: 0
+  li
+    position: relative
+    z-index: 1
+    padding: 0 0 0 30px
+    margin: 0 0 14px
+    &:last-child
+      margin: 0
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 20px
+      height: 20px
+      background: url('../img/decor-list.svg') no-repeat center
+      background-size: 100% 
+  strong
+    font-weight: 500
+
+
 h1, .h1
   width: 100%
   margin: 0
@@ -238,6 +262,15 @@ h3, .h3
   text-transform: uppercase
   margin: 0 0 26px
 
+h4, .h4
+  font-size: 24px
+  line-height: 32px
+  font-family: $title-font
+  font-weight: bold
+  width: 100%
+  text-transform: uppercase
+  margin: 0 0 16px
+
 .subtitle-text
   font-size: 14px
   font-weight: 500
@@ -259,6 +292,10 @@ h3, .h3
   font-size: 18px
   line-height: 24px
   font-weight: 300
+  p
+    margin: 0 0 24px
+    &:last-child
+      margin: 0
 
 .w-100
   width: 100%
@@ -287,6 +324,7 @@ h3, .h3
 .ml-auto
   margin-left: auto
 
+
 .mt-40
   margin-top: 40px
 
@@ -314,6 +352,11 @@ h3, .h3
   flex: 0 0 100%
   max-width: 100%
   padding: 0 9px
+
+.col-8 
+  flex: 0 0 66.6666%
+  max-width: 66.6666%
+  padding: 0 9px  
 
 .col-7
   flex: 0 0 58.3333%
@@ -668,6 +711,82 @@ blockquote
 
 .twentytwenty-horizontal .twentytwenty-handle:before, .twentytwenty-horizontal .twentytwenty-handle:after
   width: 2px
+
+.panel_heading
+  width: 100%
+  margin: 34px 0 0
+  border: 1px solid #D6D6D6
+  .block_title
+    cursor: pointer
+    width: 100%
+    display: flex
+    align-items: flex-start
+    padding: 34px
+    &:after
+      content: ''
+      @include d-flex
+      width: 56px
+      height: 56px
+      min-width: 56px
+      border-radius: 50%
+      background: #F0EEDE url('../img/accordeon-arrow.svg') no-repeat center
+      background-size: 30px
+      margin: 0 0 0 auto
+      transition: .3s ease
+  h3
+    margin: 0
+  .block_hover
+    display: none
+    padding: 0 34px 34px
+  &.in
+    .block_title
+      &::after
+        transform: rotate(95deg)  
+  
+.table-responsive
+  width: 100%
+
+.table
+  width: 100%
+  font-size: 18px
+  line-height: 24px
+  font-weight: 300
+  color: $grey
+  background: #fff
+
+thead
+  background: #F0EEDE
+  font-weight: normal
+  text-align: left
+
+th
+  padding: 15px 24px
+  border: 1px solid #F0EEDE
+
+td
+  border: 1px solid #fff
+  padding: 16px 24px   
+
+tbody
+  tr
+    &:nth-child(even)
+      background: #FAF9F2
+  .td-price
+    font-weight: 600
+
+.td-name__title
+  strong
+    font-weight: 500 
+
+.td-name__information
+  margin: 12px 0 0
+  line-height: 22px
+  font-size: 16px
+  p
+    margin: 0 0 12px
+  .code-number
+    font-size: 14px
+    line-height: 20px                  
 
 //checkbox my
 .label-checkbox

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .home-section {
   background: #FAF9F2;
   padding: 40px 0;
@@ -610,4 +611,140 @@
 
 .referral-services {
   margin: 0 0 150px;
+}
+.referral-services__content {
+  width: 100%;
+}
+.referral-services__img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.referral-services__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blockquote-services {
+  width: 100%;
+  padding: 42px;
+  background: #FAF9F2;
+}
+.blockquote-services .box-text {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+}
+.blockquote-services .box-text::before {
+  content: "“";
+  opacity: 0.2;
+  color: #414141;
+  width: 29px;
+  height: 34px;
+  font-size: 78px;
+  line-height: 34px;
+  font-family: "CormorantGaramond", sans-serif;
+  font-weight: bold;
+  margin: 2px 6px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blockquote-author {
+  margin: 32px 0 0;
+  display: flex;
+  align-items: center;
+}
+.blockquote-author__photo {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  margin: 0 8px 0 0;
+}
+.blockquote-author__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+}
+.blockquote-author__text strong {
+  display: block;
+  font-weight: normal;
+  margin: 0 0 8px;
+}
+
+.btn-all-prices {
+  max-width: 347px;
+  margin: 32px auto 0;
+}
+
+.attention-info {
+  max-width: 1158px;
+  width: 100%;
+  margin: 24px 0 0;
+  position: relative;
+  z-index: 1;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+  padding: 0 0 0 38px;
+}
+.attention-info::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  background: url("../img/attention-icon.svg") no-repeat center;
+  background-size: 100%;
+}
+
+.quesion-section .panel_heading {
+  min-height: 144px;
+  margin: 0;
+}
+.quesion-section .panel_heading h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 38px;
+}
+
+.video-gallery-slider__item {
+  width: 100%;
+  height: 100%;
+  background: #FAF9F2;
+  padding: 18px;
+  position: relative;
+  z-index: 1;
+}
+.video-gallery-slider__item::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 78px;
+  height: 58px;
+  background: url("../img/play-icon.svg") no-repeat center;
+  background-size: 100%;
+}
+.video-gallery-slider__item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.btn-order-certificate {
+  margin: 36px 0 0;
+  max-width: 347px;
 }
