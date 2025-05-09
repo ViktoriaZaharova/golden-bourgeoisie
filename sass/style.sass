@@ -733,13 +733,22 @@ blockquote
       background-size: 30px
       margin: 0 0 0 auto
       transition: .3s ease
+    &:hover
+      color: $accent
+      &::after
+        transform: rotate(45deg)   
   h3
     margin: 0
+    transition: .3s ease
   .block_hover
     display: none
     padding: 0 34px 34px
   &.in
     .block_title
+      &:hover
+        color: $grey
+        &::after
+          transform: rotate(95deg) 
       &::after
         transform: rotate(95deg)  
   

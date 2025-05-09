@@ -22,6 +22,9 @@
   header .list-messenger, .header-contacts
     margin: 0 0 0 30px
 
+  .container
+    max-width: 1600px
+
 @media only screen and (max-width: 1600px)
   .author-section__content
     max-width: 605px
@@ -51,8 +54,12 @@
     &:last-child
       margin: 0
 
-  header .location
+  header
+    .location
       max-width: 240px
+
+  .container
+    max-width: 1450px
 
 @media only screen and (max-width: 1450px)
   .author-section__content
@@ -107,6 +114,9 @@
 
   .header-contacts
     margin: 0
+
+  .container
+    max-width: 1200px
 
 @media only screen and (max-width: 1200px)
   .container
@@ -502,6 +512,47 @@
     font-size: 16px
     &__link
       padding: 14px
+
+  .home-cosmetology
+    margin: 18px 0 0
+    &__wrapper
+      padding: 42px
+    &__content
+      max-width: 520px
+    h1
+      margin: 0 0 16px
+    .box-text
+      margin: 16px 0 62px
+      font-size: 17px
+      line-height: 24px
+    .price
+      margin: 0 0 12px
+    .new-price
+      font-size: 30px
+      line-height: 36px
+    .old-price
+      font-size: 16px
+      line-height: 36px
+
+  .btn .svg-icon
+    width: 22px
+    height: 18px
+    min-width: 22px
+
+  .nav-breadcrumb
+    margin: 0 0 36px
+
+  .navigation-services-menu
+    li
+      margin: 0 9px 10px 0
+      &:last-child
+        margin: 0
+      a
+        font-size: 16px
+        line-height: 24px
+        padding: 10px 32px
+        min-width: 218px
+
 
 @media only screen and (max-width: 992px)
   .tabs
@@ -1638,7 +1689,7 @@
     .mail-link
       display: none
     .phone-link
-      font-size: 14px  
+      font-size: 14px
 
   .link-step-menu
     line-height: 18px

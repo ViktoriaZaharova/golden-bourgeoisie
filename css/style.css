@@ -937,12 +937,25 @@ blockquote::before p:last-child {
   margin: 0 0 0 auto;
   transition: 0.3s ease;
 }
+.panel_heading .block_title:hover {
+  color: #CBAA65;
+}
+.panel_heading .block_title:hover::after {
+  transform: rotate(45deg);
+}
 .panel_heading h3 {
   margin: 0;
+  transition: 0.3s ease;
 }
 .panel_heading .block_hover {
   display: none;
   padding: 0 34px 34px;
+}
+.panel_heading.in .block_title:hover {
+  color: #414141;
+}
+.panel_heading.in .block_title:hover::after {
+  transform: rotate(95deg);
 }
 .panel_heading.in .block_title::after {
   transform: rotate(95deg);

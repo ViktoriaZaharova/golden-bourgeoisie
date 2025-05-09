@@ -609,20 +609,20 @@
   background: #414141;
 }
 
-.referral-services {
+.about-services {
   margin: 0 0 150px;
 }
-.referral-services__content {
+.about-services__content {
   width: 100%;
 }
-.referral-services__img {
+.about-services__img {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.referral-services__img img {
+.about-services__img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -633,6 +633,7 @@
   width: 100%;
   padding: 42px;
   background: #FAF9F2;
+  margin: 24px 0 0;
 }
 .blockquote-services .box-text {
   position: relative;

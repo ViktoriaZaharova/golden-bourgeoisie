@@ -21,6 +21,9 @@
   header .list-messenger, .header-contacts {
     margin: 0 0 0 30px;
   }
+  .container {
+    max-width: 1600px;
+  }
 }
 @media only screen and (max-width: 1600px) {
   .author-section__content {
@@ -54,6 +57,9 @@
   }
   header .location {
     max-width: 240px;
+  }
+  .container {
+    max-width: 1450px;
   }
 }
 @media only screen and (max-width: 1450px) {
@@ -113,6 +119,9 @@
   }
   .header-contacts {
     margin: 0;
+  }
+  .container {
+    max-width: 1200px;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -543,6 +552,54 @@
   }
   .menu-dropdown__link {
     padding: 14px;
+  }
+  .home-cosmetology {
+    margin: 18px 0 0;
+  }
+  .home-cosmetology__wrapper {
+    padding: 42px;
+  }
+  .home-cosmetology__content {
+    max-width: 520px;
+  }
+  .home-cosmetology h1 {
+    margin: 0 0 16px;
+  }
+  .home-cosmetology .box-text {
+    margin: 16px 0 62px;
+    font-size: 17px;
+    line-height: 24px;
+  }
+  .home-cosmetology .price {
+    margin: 0 0 12px;
+  }
+  .home-cosmetology .new-price {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .home-cosmetology .old-price {
+    font-size: 16px;
+    line-height: 36px;
+  }
+  .btn .svg-icon {
+    width: 22px;
+    height: 18px;
+    min-width: 22px;
+  }
+  .nav-breadcrumb {
+    margin: 0 0 36px;
+  }
+  .navigation-services-menu li {
+    margin: 0 9px 10px 0;
+  }
+  .navigation-services-menu li:last-child {
+    margin: 0;
+  }
+  .navigation-services-menu li a {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 32px;
+    min-width: 218px;
   }
 }
 @media only screen and (max-width: 992px) {
