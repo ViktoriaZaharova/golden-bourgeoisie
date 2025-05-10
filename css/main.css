@@ -629,6 +629,35 @@
      object-fit: cover;
 }
 
+.table-services th, .table-services td {
+  width: 50%;
+}
+.table-services td {
+  padding: 12px 24px;
+}
+
+.check-box {
+  display: flex;
+  align-items: center;
+}
+.check-box::before {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  margin: 0 10px 0 0;
+  background: url("../img/check-indicator.svg") no-repeat center;
+  background-size: 100%;
+}
+
+.nocheck-box::before {
+  background: url("../img/nocheck-indicator.svg") no-repeat center;
+  background-size: 100%;
+}
+
 .blockquote-services {
   width: 100%;
   padding: 42px;
@@ -748,4 +777,87 @@
 .btn-order-certificate {
   margin: 36px 0 0;
   max-width: 347px;
+}
+
+.referral-services {
+  margin: 0 0 150px;
+}
+
+.referral-services-card {
+  width: 100%;
+  height: 100%;
+  padding: 34px;
+  background: #FAF9F2;
+}
+.referral-services-card__head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.referral-services-card__photo {
+  width: 120px;
+  height: 120px;
+  min-width: 120px;
+  margin: 0 28px 0 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.referral-services-card__photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.referral-services-card h3 {
+  max-width: 350px;
+  margin: 0;
+}
+.referral-services-card__body {
+  margin: 40px 0 0;
+  width: 100%;
+}
+
+.list-referral-services {
+  width: 100%;
+  -moz-column-count: 2;
+       column-count: 2;
+  font-size: 20px;
+  line-height: 26px;
+}
+.list-referral-services li {
+  margin: 0 0 20px;
+}
+.list-referral-services li:last-child {
+  margin: 0;
+}
+.list-referral-services a {
+  display: flex;
+  align-items: center;
+  color: rgba(65, 65, 65, 0.8);
+}
+.list-referral-services a .svg-icon {
+  margin: 0 0 0 10px;
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #CBAA65;
+  transition: 0.3s ease;
+}
+.list-referral-services a:hover {
+  color: #414141;
+}
+.list-referral-services a:hover .svg-icon {
+  transform: rotate(45deg);
+}
+.list-referral-services .link-all-services {
+  color: #CBAA65;
+}
+.list-referral-services .link-all-services span {
+  text-decoration: underline;
 }

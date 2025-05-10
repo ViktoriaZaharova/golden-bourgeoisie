@@ -502,6 +502,30 @@
       height: 100%
       object-fit: cover
 
+.table-services
+  th, td
+    width: 50%
+  td
+    padding: 12px 24px  
+
+.check-box
+  display: flex
+  align-items: center
+  &::before
+    content: ''
+    @include d-flex
+    width: 24px
+    height: 24px
+    min-width: 24px
+    margin: 0 10px 0 0
+    background: url('../img/check-indicator.svg') no-repeat center
+    background-size: 100%
+
+.nocheck-box
+  &::before
+    background: url('../img/nocheck-indicator.svg') no-repeat center
+    background-size: 100%
+
 .blockquote-services
   width: 100%
   padding: 42px
@@ -599,8 +623,69 @@
   img
     width: 100%
     height: 100%
-    object-fit: cover  
+    object-fit: cover
 
 .btn-order-certificate
   margin: 36px 0 0
-  max-width: 347px    
+  max-width: 347px
+
+.referral-services
+  margin: 0 0 150px
+
+.referral-services-card
+  width: 100%
+  height: 100%
+  padding: 34px
+  background: #FAF9F2
+  &__head
+    width: 100%
+    display: flex
+    align-items: center
+  &__photo
+    width: 120px
+    height: 120px
+    min-width: 120px
+    margin: 0 28px 0 0
+    border-radius: 50%
+    @include d-flex
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  h3
+    max-width: 350px
+    margin: 0
+  &__body
+    margin: 40px 0 0
+    width: 100%
+
+.list-referral-services
+  width: 100%
+  column-count: 2
+  font-size: 20px
+  line-height: 26px
+  li
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+  a
+    display: flex
+    align-items: center
+    color: rgba($grey, .8)
+    .svg-icon
+      margin: 0 0 0 10px
+      width: 26px
+      height: 26px
+      min-width: 26px
+      @include d-flex
+      fill: $accent
+      transition: .3s ease
+    &:hover
+      color: $grey
+      .svg-icon
+        transform: rotate(45deg)
+  .link-all-services
+    color: $accent
+    span
+      text-decoration: underline

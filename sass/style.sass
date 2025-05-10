@@ -234,6 +234,16 @@ ul, ol
   strong
     font-weight: 500
 
+.list-number
+  padding: 0 0 0 30px
+  li
+    margin: 0 0 12px
+    &:last-child
+      margin: 0
+    &::marker
+      color: $accent
+      font-weight: 600
+
 
 h1, .h1
   width: 100%
@@ -770,11 +780,15 @@ thead
 
 th
   padding: 15px 24px
-  border: 1px solid #F0EEDE
+  border-right: 1px solid #fff
+  &:last-child
+    border: none
 
 td
-  border: 1px solid #fff
+  border-right: 1px solid #fff
   padding: 16px 24px   
+  &:last-child
+    border: none
 
 tbody
   tr
