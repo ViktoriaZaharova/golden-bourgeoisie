@@ -1005,6 +1005,7 @@ th:last-child {
 td {
   border-right: 1px solid #fff;
   padding: 16px 24px;
+  vertical-align: top;
 }
 td:last-child {
   border: none;

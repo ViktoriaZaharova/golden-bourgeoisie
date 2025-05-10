@@ -629,6 +629,13 @@
      object-fit: cover;
 }
 
+.table-prices th:first-child, .table-prices td:first-child {
+  width: 40%;
+}
+.table-prices th:nth-child(2), .table-prices td:nth-child(2) {
+  width: 27%;
+}
+
 .table-services th, .table-services td {
   width: 50%;
 }
