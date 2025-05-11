@@ -557,6 +557,9 @@
   .logo {
     max-width: 125px;
   }
+  header .btn-callback {
+    height: 42px;
+  }
   .menu-header li .menu-link {
     padding: 16px 18px;
   }
@@ -713,7 +716,7 @@
     font-size: 16px;
     line-height: 24px;
   }
-  th, td {
+  th, td, .table-services td {
     padding: 13px 20px;
   }
   .attention-info {
@@ -1319,7 +1322,7 @@
   .blockquote-author {
     margin: 20px 0 0;
   }
-  th, td {
+  th, td, .table-services td {
     padding: 13px 18px;
   }
   .td-name__information {
@@ -1351,6 +1354,9 @@
   }
   .referral-services {
     margin: 0 0 100px;
+  }
+  .check-box {
+    align-items: flex-start;
   }
 }
 @media only screen and (max-width: 680px) {
@@ -1386,6 +1392,9 @@
   }
   header .location {
     font-size: 15px;
+  }
+  header .btn-callback {
+    height: 42px;
   }
   .header-top .schedule-text {
     font-size: 13px;
@@ -1969,7 +1978,7 @@
   .table {
     font-size: 15px;
   }
-  th, td {
+  th, td, .table-services td {
     padding: 12px 16px;
   }
   .table-prices th:first-child, .table-prices td:first-child {
@@ -2025,6 +2034,12 @@
   }
   .about-services {
     margin: 0 0 90px;
+  }
+  .check-box::before {
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    margin: 0 5px 0 0;
   }
 }
 @media only screen and (max-width: 440px) {
@@ -2411,8 +2426,9 @@
   }
   .table {
     font-size: 14px;
+    line-height: 18px;
   }
-  th, td {
+  th, td, .table-services td {
     padding: 10px 14px;
   }
   .td-time {
