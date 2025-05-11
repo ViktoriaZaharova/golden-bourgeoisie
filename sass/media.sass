@@ -61,6 +61,9 @@
   .container
     max-width: 1450px
 
+  .home-cosmetology__content
+    max-width: 675px
+
 @media only screen and (max-width: 1450px)
   .author-section__content
     max-width: 550px
@@ -117,6 +120,19 @@
 
   .container
     max-width: 1200px
+
+  .home-cosmetology__wrapper
+    position: relative
+    z-index: 1
+    &:before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      left: 0
+      top: 0
+      background: linear-gradient(to right, rgba(250,249,242,1) 0%,rgba(255,255,255,0) 100%)
+      z-index: -1
 
 @media only screen and (max-width: 1200px)
   .container
@@ -517,19 +533,10 @@
     margin: 18px 0 0
     &__wrapper
       padding: 42px
-      position: relative
-      z-index: 1
       background: url('../img/cosmetology-home-bg-tablet.jpg') no-repeat center
       background-size: cover
-      &:before
-        content: ''
-        position: absolute
-        width: 100%
-        height: 100%
-        left: 0
-        top: 0
-        background: linear-gradient(to right, rgba(250,249,242,1) 0%,rgba(255,255,255,0) 100%)
-        z-index: -1
+      margin: 0 0 24px
+
     &__content
       max-width: 520px
     h1
@@ -577,7 +584,7 @@
       width: 72px
       height: 72px
       min-width: 72px
-      margin: 0 18px 0 0  
+      margin: 0 18px 0 0
 
   .list-referral-services
     column-count: 1
@@ -592,7 +599,7 @@
         width: 24px
         height: 24px
         min-width: 24px
-        margin: 0 0 0 8px  
+        margin: 0 0 0 8px
 
   .list-decor
     margin: 0 0 20px
@@ -602,13 +609,13 @@
         margin: 0
 
   .about-services
-    margin: 0 0 120px      
+    margin: 0 0 120px
 
   .about-services__img
     .d-pc
       display: none
     .d-tablet
-      display: block                
+      display: block
 
   .panel_heading
     margin: 24px 0 0
@@ -620,7 +627,7 @@
         min-width: 48px
         background-size: 24px
     .block_hover
-      padding: 0 24px 24px 
+      padding: 0 24px 24px
 
   .blockquote-services
     padding: 26px
@@ -628,7 +635,7 @@
 
   .blockquote-services .box-text::before
     font-size: 58px
-    line-height: 34px      
+    line-height: 34px
 
   .blockquote-author
     margin: 22px 0 0
@@ -640,7 +647,7 @@
       font-size: 16px
 
   .list-number
-    padding: 0 0 0 20px    
+    padding: 0 0 0 20px
 
   .table
     font-size: 16px
@@ -653,7 +660,7 @@
     margin: 18px 0 0
     font-size: 15px
     line-height: 21px
-    padding: 0 0 0 33px
+    padding: 0 0 0 34px
 
   .btn-all-prices
     margin: 24px auto 0
@@ -661,7 +668,7 @@
 
   .quesion-section
     .col-6
-      max-width: 100%    
+      max-width: 100%
       flex: 0 0 100%
 
   .quesion-section .panel_heading h3
@@ -669,8 +676,8 @@
     line-height: 34px
 
   .quesion-section .panel_heading
-    min-height: 116px
-    
+    min-height: auto
+
   .btn-order-certificate
     max-width: 223px
     margin: 20px 0 0
@@ -678,7 +685,7 @@
   .box-text p
     margin: 0 0 20px
     &:last-child
-      margin: 0         
+      margin: 0
 
 @media only screen and (max-width: 992px)
   .tabs
@@ -711,6 +718,20 @@
 
   .list-documents
     margin: 0
+
+  .nav-breadcrumb
+    margin: 0 0 34px
+
+  .breadcrumb
+    font-size: 14px
+    line-height: 18px
+
+  .container
+    max-width: 920px
+
+  .video-gallery-slider__item::before
+    width: 65px
+    height: 48px
 
 @media only screen and (max-width: 920px)
   .user-navigation
@@ -782,6 +803,9 @@
     &:last-child
       margin: 0
 
+  .container
+    max-width: 768px
+
 @media only screen and (max-width: 768px)
   .btn
     height: 46px
@@ -800,6 +824,10 @@
   h3, .h3
     font-size: 26px
     line-height: 34px
+
+  h4, .h4
+    font-size: 22px
+    line-height: 30px
 
   .m-0
     margin: 0
@@ -843,7 +871,7 @@
   .row, .slider-stretch .slick-list
     margin: 0 -7px
 
-  .col-6, .col-12, .col-5, .col-7
+  .col-6, .col-12, .col-5, .col-7, .col-3, .col-9
     padding: 0 7px
 
   .col-md-4
@@ -860,6 +888,7 @@
     flex: 0 0 66.6667%
     max-width: 66.6667%
     padding: 0 7px
+
 
   .col-md-12
     flex: 0 0 100%
@@ -1076,6 +1105,126 @@
       margin-bottom: 0
       &:last-child
         margin: 0
+
+  .home-cosmetology__wrapper
+    padding: 24px
+
+  .home-cosmetology__content
+    max-width: 402px
+
+  .home-cosmetology
+    .box-text
+      margin: 16px 0 26px
+      font-size: 16px
+    .btn-group
+      flex-direction: column
+      align-items: flex-start
+      .btn
+        margin: 0 0 8px
+        &:last-child
+          margin: 0
+
+  .home-cosmetology .new-price
+    font-size: 26px
+
+  .container
+    max-width: 702px
+
+  .navigation-services-menu li
+    margin: 0 8px 8px 0
+    &:last-child
+      margin: 0
+    a
+      padding: 8px 26px
+      font-size: 16px
+      min-width: auto
+
+  .navigation-services
+    margin: 0 0 80px
+
+  .referral-services
+    .col-6
+      max-width: 100%
+      flex: 0 0 100%
+
+  .referral-services-card
+    padding: 20px
+    &__body
+      margin: 24px 0 0
+    &__photo
+      width: 68px
+      height: 68px
+      min-width: 68px
+      margin: 0 16px 0 0
+    h3
+      br
+        display: none
+
+  .list-referral-services
+    column-count: 2
+
+  .about-services
+    .row
+      align-items: flex-start
+
+  .about-services__img
+    margin: 0 0 16px
+    .d-tablet
+      display: none
+    .d-md
+      display: block
+
+  .list-decor li
+    padding: 0 0 0 24px
+    &::before
+      width: 18px
+      height: 18px
+
+  .panel_heading
+    margin: 20px 0 0
+    .block_title
+      padding: 20px 22px
+      &::after
+        width: 46px
+        height: 46px
+        min-width: 46px
+    .block_hover
+      padding: 0 22px 20px
+
+  .blockquote-services
+    padding: 24px
+
+  .blockquote-author
+    margin: 20px 0 0
+
+  th, td
+    padding: 13px 18px
+
+  .td-name__information
+    font-size: 15px
+    margin: 10px 0 0
+    p
+      margin: 0 0 10px
+
+  .attention-info
+    margin: 16px 0 0
+
+  .btn-all-prices
+    margin: 22px auto 0
+
+  .quesion-section .panel_heading h3
+    font-size: 22px
+    line-height: 32px
+
+  .video-gallery-slider__item
+    padding: 14px
+
+  .video-gallery-slider__item::before
+    width: 54px
+    height: 40px
+
+  .btn-order-certificate
+    margin: 16px 0 0
 
 @media only screen and (max-width: 680px)
   .why-us-section

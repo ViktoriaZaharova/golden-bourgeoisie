@@ -230,7 +230,7 @@ ul, ol
       width: 20px
       height: 20px
       background: url('../img/decor-list.svg') no-repeat center
-      background-size: 100% 
+      background-size: 100%
   strong
     font-weight: 500
 
@@ -243,7 +243,6 @@ ul, ol
     &::marker
       color: $accent
       font-weight: 600
-
 
 h1, .h1
   width: 100%
@@ -334,7 +333,6 @@ h4, .h4
 .ml-auto
   margin-left: auto
 
-
 .mt-40
   margin-top: 40px
 
@@ -363,10 +361,15 @@ h4, .h4
   max-width: 100%
   padding: 0 9px
 
-.col-8 
+.col-9
+  flex: 0 0 75%
+  max-width: 75%
+  padding: 0 9px
+
+.col-8
   flex: 0 0 66.6666%
   max-width: 66.6666%
-  padding: 0 9px  
+  padding: 0 9px
 
 .col-7
   flex: 0 0 58.3333%
@@ -386,6 +389,11 @@ h4, .h4
 .col-4
   flex: 0 0 33.3333%
   max-width: 33.3333%
+  padding: 0 9px
+
+.col-3
+  flex: 0 0 25%
+  max-width: 25%
   padding: 0 9px
 
 .d-flex
@@ -429,7 +437,7 @@ h4, .h4
         display: inline-block
         margin: 0 6px
       &:hover
-        color: $accent  
+        color: $accent
     span
       opacity: 0.5
 
@@ -549,7 +557,7 @@ blockquote
       &:last-child
         margin: 0
 
-.d-tablet
+.d-tablet, .d-md
   display: none
 
 // slick
@@ -746,9 +754,9 @@ blockquote
     &:hover
       color: $accent
       &::after
-        transform: rotate(45deg)   
+        transform: rotate(45deg)
   h3
-    margin: 0
+    margin: 0 12px 0 0
     transition: .3s ease
   .block_hover
     display: none
@@ -758,10 +766,10 @@ blockquote
       &:hover
         color: $grey
         &::after
-          transform: rotate(95deg) 
+          transform: rotate(95deg)
       &::after
-        transform: rotate(95deg)  
-  
+        transform: rotate(95deg)
+
 .table-responsive
   width: 100%
 
@@ -787,7 +795,7 @@ th
 td
   border-right: 1px solid #fff
   padding: 16px 24px
-  vertical-align: top   
+  vertical-align: top
   &:last-child
     border: none
 
@@ -800,7 +808,7 @@ tbody
 
 .td-name__title
   strong
-    font-weight: 500 
+    font-weight: 500
 
 .td-name__information
   margin: 12px 0 0
@@ -810,7 +818,7 @@ tbody
     margin: 0 0 12px
   .code-number
     font-size: 14px
-    line-height: 20px                  
+    line-height: 20px
 
 //checkbox my
 .label-checkbox

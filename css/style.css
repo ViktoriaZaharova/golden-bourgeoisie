@@ -494,6 +494,12 @@ h4, .h4 {
   padding: 0 9px;
 }
 
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+  padding: 0 9px;
+}
+
 .col-8 {
   flex: 0 0 66.6666%;
   max-width: 66.6666%;
@@ -521,6 +527,12 @@ h4, .h4 {
 .col-4 {
   flex: 0 0 33.3333%;
   max-width: 33.3333%;
+  padding: 0 9px;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
   padding: 0 9px;
 }
 
@@ -720,7 +732,7 @@ blockquote::before p:last-child {
   margin: 0;
 }
 
-.d-tablet {
+.d-tablet, .d-md {
   display: none;
 }
 
@@ -958,7 +970,7 @@ blockquote::before p:last-child {
   transform: rotate(45deg);
 }
 .panel_heading h3 {
-  margin: 0;
+  margin: 0 12px 0 0;
   transition: 0.3s ease;
 }
 .panel_heading .block_hover {
