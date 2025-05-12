@@ -750,6 +750,65 @@
   .box-text p:last-child {
     margin: 0;
   }
+  .tabs-maps li .tabs-link {
+    min-width: auto;
+    font-size: 16px;
+    height: 50px;
+    padding: 4px 15px;
+  }
+  .directions-box {
+    padding: 24px;
+  }
+  .directions-box .box-text {
+    margin: 0 0 20px;
+  }
+  .tabs-maps {
+    margin: 20px 0 10px;
+  }
+  .contacts-box__body .phone-link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .map-wrapper {
+    margin: 20px 0;
+    height: 400px;
+  }
+  .requisites-box, .contacts-wrapper {
+    padding: 24px;
+  }
+  .link-requisites {
+    font-size: 18px;
+  }
+  .list-requisites-nav {
+    font-size: 16px;
+  }
+  .contacts-box {
+    font-size: 16px;
+    padding: 0 0 10px;
+    margin: 0 0 10px;
+  }
+  .contacts-box__head {
+    margin: 0 0 10px;
+  }
+  .contacts-box__body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .contacts-wrapper .btn-group {
+    margin: 20px 0 0;
+  }
+  .mb-50 {
+    margin-bottom: 30px;
+  }
+  .page-home {
+    margin: 30px 0 100px;
+  }
+  .contacts-wrapper__avatar {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    margin: 0 20px 0 0;
+  }
 }
 @media only screen and (max-width: 992px) {
   .tabs .tabs-link {
@@ -884,6 +943,11 @@
   }
   .container {
     max-width: 768px;
+  }
+  .section-directions .col-6 {
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 20px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1357,6 +1421,44 @@
   }
   .check-box {
     align-items: flex-start;
+  }
+  .tabs-maps li .tabs-link {
+    height: 40px;
+    font-size: 14px;
+  }
+  .directions-box, .requisites-box, .contacts-wrapper {
+    padding: 20px;
+  }
+  .list-requisites-nav li {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+  .list-requisites-nav li:last-child {
+    margin: 0;
+  }
+  .link-requisites {
+    font-size: 16px;
+  }
+  .map-wrapper {
+    height: 300px;
+  }
+  .contacts-wrapper__avatar {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+  }
+  .contacts-box__body {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .contacts-box__body .phone-link {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .contacts-box__head .svg-icon {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
   }
 }
 @media only screen and (max-width: 680px) {

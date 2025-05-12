@@ -440,6 +440,10 @@ h4, .h4 {
   margin: 150px 0;
 }
 
+.mb-50 {
+  margin-bottom: 50px;
+}
+
 .mb-40 {
   margin-bottom: 40px;
 }
@@ -698,7 +702,12 @@ h4, .h4 {
   color: #414141;
 }
 
+.tab_container {
+  width: 100%;
+}
+
 .tab_content {
+  width: 100%;
   display: none;
   transition: all 0.3s ease;
 }
@@ -1045,6 +1054,10 @@ tbody .td-price {
 .td-name__information .code-number {
   font-size: 14px;
   line-height: 20px;
+}
+
+.page-home {
+  margin: 40px 0 150px;
 }
 
 .label-checkbox {
