@@ -272,3 +272,9 @@ $('.go_to').click(function (e) {
   }
   return false;
 });
+
+$('.form-callback [type="submit"]').on('click', function(e){
+  e.preventDefault();
+  $('.form-callback').fadeOut();
+  $('.callback-thanks').fadeIn();
+});

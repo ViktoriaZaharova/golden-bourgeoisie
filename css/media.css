@@ -24,6 +24,10 @@
   .container {
     max-width: 1600px;
   }
+  .tabs .tabs-link {
+    font-size: 18px;
+    min-width: 210px;
+  }
 }
 @media only screen and (max-width: 1600px) {
   .author-section__content {
@@ -63,6 +67,13 @@
   }
   .home-cosmetology__content {
     max-width: 675px;
+  }
+  .tabs .tabs-link {
+    font-size: 16px;
+    min-width: 190px;
+  }
+  .services-card__name {
+    font-size: 18px;
   }
 }
 @media only screen and (max-width: 1450px) {
@@ -139,6 +150,34 @@
     top: 0;
     background: linear-gradient(to right, rgb(250, 249, 242) 0%, rgba(255, 255, 255, 0) 100%);
     z-index: -1;
+  }
+  .tabs li {
+    margin: 0 10px 0 0;
+  }
+  .tabs li:last-child {
+    margin: 0;
+  }
+  .tabs .tabs-link {
+    font-size: 14px;
+    min-width: 160px;
+  }
+  .services-card__name {
+    font-size: 20px;
+  }
+  .services-card__img {
+    height: 340px;
+  }
+  .services-card__body {
+    height: calc(100% - 340px);
+  }
+  .price {
+    font-size: 18px;
+  }
+  h2, .h2 {
+    font-size: 40px;
+  }
+  .callback-section .wrapper-content {
+    max-width: 600px;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -809,6 +848,15 @@
     min-width: 100px;
     margin: 0 20px 0 0;
   }
+  .callback-section .wrapper-content {
+    max-width: 464px;
+  }
+  .callback-contacts {
+    margin: 122px 0 0;
+  }
+  .callback-contacts p {
+    font-size: 15px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .tabs .tabs-link {
@@ -1459,6 +1507,12 @@
     width: 20px;
     height: 20px;
     min-width: 20px;
+  }
+  .callback-section .wrapper-content {
+    max-width: 407px;
+  }
+  .callback-contacts {
+    margin: 80px 0 0;
   }
 }
 @media only screen and (max-width: 680px) {
@@ -2143,6 +2197,27 @@
     min-width: 18px;
     margin: 0 5px 0 0;
   }
+  .callback-section .wrapper-content {
+    max-width: none;
+  }
+  .callback-contacts {
+    max-width: 432px;
+    margin: 100px 0 0;
+  }
+  .callback-contacts p {
+    font-size: 14px;
+  }
+  .callback-contacts .phone-link {
+    font-size: 18px;
+    color: #fff;
+  }
+  .callback-contacts .phone-link .svg-icon {
+    fill: #fff;
+  }
+  .callback-contacts .list-messenger li a {
+    fill: #fff;
+    border-color: #fff;
+  }
 }
 @media only screen and (max-width: 440px) {
   .header-top {
@@ -2652,6 +2727,16 @@
   .btn-order-certificate {
     max-width: none;
     width: 100%;
+  }
+  .callback-contacts {
+    margin: 77px 0 0;
+  }
+  .callback-contacts p {
+    font-size: 13px;
+  }
+  .callback-contacts .phone-link {
+    font-size: 17px;
+    margin: 16px 0 10px;
   }
 }
 @media only screen and (max-width: 330px) {

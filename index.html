@@ -435,7 +435,7 @@
     <div class="container">
       <div class="w-100">
         <div class="row align-items-end">
-          <div class="col-5 col-lg-7 col-md-8 mb-40">
+          <div class="col-5 col-lg-6 col-md-8 mb-40">
             <div class="subtitle-text">Наши услуги</div>
             <h2 class="m-0">Всё для вашей красоты
               и гармонии</h2>
@@ -443,7 +443,7 @@
 
           <div class="col-7 col-lg-12 mb-40 mb-md-10">
             <ul class="tabs tabs-services my-ul">
-              <li class="tabs-item"><a href="#tab1" class="tabs-link">
+              <li class="tabs-item active"><a href="#tab1" class="tabs-link">
                   <span class="tabs-link__icon"><img src="img/category-img1.png" alt=""></span>
                   <span class="tabs-link__text">Массаж</span>
                 </a></li>
@@ -1589,20 +1589,24 @@
     </div>
   </section>
 
-  <section class="callback-section p-120">
+ <section class="callback-section p-120">
     <div class="container">
       <div class="w-100">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12">
             <div class="wrapper-content">
               <div class="subtitle-text">Мы всегда на связи</div>
-              <h2>Не знаете с чего начать?</h2>
-              <div class="box-text">
-                <p>Запишись на консультацию и мы подберем для вас услугу, расскажем о стоимость</p>
-              </div>
+              <h2>Запишитесь на консультацию со специалистом</h2>
 
-              <form method="post" class="form">
+
+              <form method="post" class="form form-callback">
+
                 <div class="row">
+                  <div class="col-12 mb-40">
+                    <div class="box-text">
+                      <p>Запишись на консультацию и мы подберем для вас услугу, расскажем о стоимости</p>
+                    </div>
+                  </div>
                   <div class="col-6 mb-18">
                     <label>
                       <input type="text" name="name" placeholder="Ваши имя" required>
@@ -1617,11 +1621,49 @@
                     <button type="submit" class="btn btn-accent w-100">Отправить заявку</button>
                   </div>
                   <div class="col-12">
-                    <div class="consent">Нажимая кнопку “Отправить заявку” вы соглашаетесь с условиями обработки данных
+                    <div class="consent">Нажимая кнопку “Отправить заявку” вы соглашаетесь с условиями обработки
+                      данных
                     </div>
                   </div>
                 </div>
               </form>
+
+              <div class="callback-thanks">
+                <div class="box-text">
+                  <p><strong>Спасибо! Ваша заявка успешно направлена! </strong>
+                    Наш отдел заботы свяжется с вами в ближайшее время</p>
+                </div>
+                <div class="callback-contacts">
+                  <p>Вы так же можете связаться с нами самостоятельно, или посмотреть наши социальные сети</p>
+                  <a href="tel:+79890001978" class="phone-link contact-link">
+                    <svg class="svg-icon contact-link__icon">
+                      <use xlink:href="img/sprite.svg#phone-icon"></use>
+                    </svg>
+                    <span class="contact-link__text">+7 (989) 000-19-78</span>
+                  </a>
+                  <ul class="list-messenger list-messenger-black my-ul">
+                    <li>
+                      <a href="#" target="_blank"><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#whatsapp-icon"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#telegram-icon"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#vk-icon"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
