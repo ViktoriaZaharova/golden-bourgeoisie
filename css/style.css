@@ -452,6 +452,10 @@ h4, .h4 {
   margin-bottom: 32px;
 }
 
+.mb-20 {
+  margin-bottom: 20px;
+}
+
 .mb-18 {
   margin-bottom: 18px;
 }
@@ -743,6 +747,101 @@ blockquote::before p:last-child {
 
 .d-tablet, .d-md, .d-mobile {
   display: none;
+}
+
+.select-my {
+  min-width: 234px;
+  margin: 0 12px 12px 0;
+  padding: 10px 52px 10px 20px;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #414141;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff url("../img/arrow-select.svg") no-repeat calc(100% - 20px) center;
+  background-size: 22px;
+}
+.select-my:last-child {
+  margin: 0;
+}
+
+.filter-works {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.viewed-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 24px 0 0;
+}
+.viewed-box p {
+  font-weight: 300;
+  margin: 0 18px 0 0;
+}
+
+.nav-pagination {
+  width: 100%;
+  margin: 24px 0 0;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+}
+.pagination li {
+  margin: 0 8px 0 0;
+}
+.pagination li:first-child {
+  margin: 0 14px 0 0;
+}
+.pagination li:last-child {
+  margin: 0 0 0 6px;
+}
+.pagination li a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #414141;
+}
+.pagination li a:hover, .pagination li a.active {
+  background: #CBAA65;
+  color: #fff;
+  border-color: #CBAA65;
+}
+.pagination li a:hover svg, .pagination li a.active svg {
+  stroke: #fff;
+}
+
+.pagination-link {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination-link svg {
+  width: 9px;
+  height: 12px;
+  fill: none;
+  stroke: #414141;
+}
+.pagination-link.pagination-arrow.disabled svg {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  stroke: #A6A6A6;
 }
 
 .slick-slider {

@@ -75,6 +75,10 @@
   .services-card__name
     font-size: 18px
 
+  .col-xl-6
+    max-width: 50%
+    flex: 0 0 50%
+    
 @media only screen and (max-width: 1450px)
   .author-section__content
     max-width: 550px
@@ -131,6 +135,8 @@
 
   .container
     max-width: 1200px
+
+  
 
   .home-cosmetology__wrapper
     position: relative
@@ -794,6 +800,9 @@
     p
       font-size: 15px
 
+  .viewed-box
+    justify-content: flex-start    
+
 @media only screen and (max-width: 992px)
   .tabs
     .tabs-link
@@ -1388,6 +1397,11 @@
 
   .callback-contacts
     margin: 80px 0 0
+
+  .select-my
+    min-width: auto
+    background-position: calc( 100% - 10px ) center
+    font-size: 16px 
 
 @media only screen and (max-width: 680px)
   .why-us-section
@@ -2016,7 +2030,6 @@
   .callback-section .wrapper-content
     max-width: none
 
-
   .callback-contacts
     max-width: 432px
     margin: 100px 0 0
@@ -2033,6 +2046,27 @@
           fill: #fff
           border-color: #fff
 
+  .pagination li a, .pagination-link
+    width: 40px
+    height: 40px
+    min-width: 40px
+    font-size: 14px
+
+  .pagination li
+    margin: 0 4px 0 0
+    &:last-child
+      margin: 0 4px 0 0
+    &:first-child
+      margin: 0
+
+
+  .page-home
+    margin: 30px 0 70px
+    
+  .viewed-box
+    flex-wrap: wrap
+    p
+      margin: 0 10px 0 0        
 @media only screen and (max-width: 440px)
   .header-top
     padding: 8px 0
@@ -2504,7 +2538,12 @@
     .phone-link
       font-size: 17px
       margin: 16px 0 10px
-      
+
+  .filter-works
+    .select-my
+      width: 100%
+      margin: 0 0 10px    
+
 @media only screen and (max-width: 330px)
   .header-top .contact-link
     font-size: 13px
