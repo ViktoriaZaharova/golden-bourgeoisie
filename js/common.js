@@ -278,3 +278,9 @@ $('.form-callback [type="submit"]').on('click', function(e){
   $('.form-callback').fadeOut();
   $('.callback-thanks').fadeIn();
 });
+
+// filter prices toggle
+$('.filter-prices__toggle').on('click', function (e) {
+  e.preventDefault();
+  
+});

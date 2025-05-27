@@ -116,7 +116,6 @@
 .services-section
   margin: 140px 0 150px
 
-
 .btn-all-services
   margin: 32px auto 0
   max-width: 387px
@@ -128,8 +127,6 @@
   align-items: flex-start
   justify-content: flex-end
   flex-wrap: wrap
-
-
 
 .services-card
   width: 100%
@@ -173,7 +170,7 @@
     &:hover
       color: $accent
   .btn-group
-    margin: auto 0 0    
+    margin: auto 0 0
 
   .box-text
     margin: 0 0 20px
@@ -442,8 +439,8 @@
 
 .callback-thanks
   display: none
-  max-width: 575px 
-  width: 100%   
+  max-width: 575px
+  width: 100%
   .box-text
     font-weight: 300
     strong
@@ -451,8 +448,8 @@
       font-weight: normal
 
 .callback-contacts
-  margin: 76px 0 0  
-  
+  margin: 76px 0 0
+
   p
     font-size: 16px
     font-weight: 300
@@ -463,7 +460,7 @@
     .svg-icon
       fill: $grey
     &:hover
-      color: $accent-hover    
+      color: $accent-hover
 
 // cosmetology
 .home-cosmetology
@@ -534,15 +531,42 @@
 .table-prices
   th, td
     &:first-child
-      width: 40%
+      width: 37%
     &:nth-child(2)
-      width: 27%  
+      width: 30%
+  .price
+    font-weight: 600
+  .new-price
+    font-size: 18px
+  .old-price
+    margin: 0 0 0 6px
+  h4
+    text-align: center
+    margin: 0
+    text-transform: none
+  .table-subtitle
+    background: #F2F2F2
+    text-align: center
+    p
+      margin: 12px auto 0
+    td
+      padding: 18px
+
+.table-prices-v2
+  tbody
+    tr
+      background: #FAF9F2
+      &.bg-white
+        background: #fff        
+      &.table-subtitle
+        background: #F2F2F2
+      
 
 .table-services
   th, td
     width: 50%
   td
-    padding: 12px 24px  
+    padding: 12px 24px
 
 .check-box
   display: flex
@@ -705,7 +729,7 @@
     margin: 0 0 18px
     width: 80px
     height: 80px
-    min-width: 80px    
+    min-width: 80px
 
 .list-referral-services
   width: 100%
@@ -737,7 +761,7 @@
     span
       text-decoration: underline
   &.column-count-1
-    column-count: 1    
+    column-count: 1
 
 // contacts page
 .map-wrapper
@@ -751,7 +775,7 @@
 
 .btn-map
   img
-    margin: 0 10px 0 0      
+    margin: 0 10px 0 0
 
 .contacts-wrapper
   width: 100%
@@ -774,11 +798,11 @@
       height: 100%
       object-fit: cover
   h3
-    margin: 0  
+    margin: 0
   &__body
     width: 100%
-  .btn-group 
-    margin: 32px 0 0  
+  .btn-group
+    margin: 32px 0 0
 
 .contacts-box
   width: 100%
@@ -814,7 +838,7 @@
     .phone-link
       font-size: 26px
       line-height: 36px
-      
+
 .list-messenger-black
   li
     a
@@ -860,7 +884,7 @@
     margin: 0 14px 0 0
   &__size
     display: block
-    margin: 4px 0 0 
+    margin: 4px 0 0
     font-size: 14px
     font-weight: 300
 
@@ -896,10 +920,104 @@
   .video-gallery-slider__item
     padding: 0
   .box-text
-    margin: 0 0 28px  
+    margin: 0 0 28px
 
 .yandex-taxi
   margin: auto 0 0
 
+// page prices
+.list-filter-prices
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  &__item
+    margin: 0 12px 12px 0
+    display: none
+    &:last-child
+      margin: 0
+    &:nth-child(-n+11)
+      display: block
+  &__link
+    border: 1px solid #D6D6D6
+    border-radius: 60px
+    padding: 14px 46px
+    font-size: 18px
+    line-height: 24px
+    font-weight: 300
+    color: $grey
+    @include d-flex
+    &:hover
+      color: #fff
+      background: $grey
+    &.active
+      color: #fff
+      background: $accent
 
-  
+.btn-toggle-filter-prices
+  border: 1px solid $accent
+  background: #FAF9F2
+  border-radius: 60px
+  padding: 14px 46px
+  font-size: 18px
+  line-height: 24px
+  font-weight: 300
+  color: $accent
+  @include d-flex
+  &:hover
+    color: #fff
+    background: $accent
+  &:after
+    width: 46px
+    height: 46px
+
+.panel_heading-price
+  margin: 18px 0 0
+  &:first-child
+    margin: 0
+  h3
+    margin: 0
+  .block_title
+    align-items: center
+    padding: 24px 70px 24px 24px
+    &:after
+      width: 46px
+      height: 46px
+      min-width: 46px
+      top: 50%
+      transform: translateY(-50%)
+      right: 24px
+      position: absolute
+      background-size: 24px
+    .box-text
+      max-width: 1360px
+    &:hover
+      &:after
+        transform: translateY(-50%) rotate(45deg)
+  &.in
+    background: #F0EEDE
+    border-color: transparent
+    .block_title
+      &:after
+        background: #CBAA65 url("../img/accordeon-arrow-white.svg") no-repeat center
+        background-size: 30px
+        transform: translateY(-50%) rotate(95deg)
+      &:hover
+        &::after
+          transform: translateY(-50%) rotate(95deg)
+  .block_hover
+    padding: 0
+  thead
+    background: #F9F9F9
+  th
+    padding: 11px 24px
+    color: rgba($grey,.7)
+
+.sale-label
+  color: #fff
+  background: #D60000
+  border-radius: 60px
+  margin: 0 0 0 10px
+  padding: 4px 14px
+  font-size: 15px
+  font-weight: 500
