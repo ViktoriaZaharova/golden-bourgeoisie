@@ -78,7 +78,7 @@
   .col-xl-6
     max-width: 50%
     flex: 0 0 50%
-    
+
 @media only screen and (max-width: 1450px)
   .author-section__content
     max-width: 550px
@@ -136,8 +136,6 @@
   .container
     max-width: 1200px
 
-  
-
   .home-cosmetology__wrapper
     position: relative
     z-index: 1
@@ -177,6 +175,24 @@
 
   .callback-section .wrapper-content
     max-width: 600px
+
+  .panel_heading-price .block_title
+    padding: 22px 80px 22px 22px
+
+  .panel_heading-avatar
+    margin: 0 12px 0 0
+    width: 88px
+    height: 88px
+    min-width: 88px
+
+  .panel_heading .block_title .box-text
+    margin: 10px 0 0
+
+  td
+    padding: 16px 20px
+
+  .panel_heading-price th
+    padding: 11px 16px
 
 @media only screen and (max-width: 1200px)
   .container
@@ -801,7 +817,22 @@
       font-size: 15px
 
   .viewed-box
-    justify-content: flex-start    
+    justify-content: flex-start
+
+  .panel_heading-price .block_title
+    padding: 22px 80px 22px 22px
+
+  .panel_heading-price .block_hover
+    padding: 0
+
+  .list-filter-prices__item
+    margin: 0 10px 10px 0
+
+  .list-filter-prices__link
+    padding: 10px 36px  
+
+  .btn-toggle-filter-prices
+    padding: 10px 36px
 
 @media only screen and (max-width: 992px)
   .tabs
@@ -1401,8 +1432,30 @@
   .select-my
     min-width: auto
     background-position: calc( 100% - 10px ) center
-    font-size: 16px 
+    font-size: 16px
 
+  .panel_heading-price .block_title
+    padding: 20px 70px 20px 20px
+    &.in
+      &:after
+        background-size: 24px
+    &:after
+      width: 42px
+      height: 42px
+      min-width: 42px
+      right: 20px
+      background-size: 24px
+
+  .panel_heading-price .block_hover
+    padding: 0
+
+  .panel_heading-avatar
+    width: 78px
+    height: 78px
+    min-width: 78px
+
+  
+    
 @media only screen and (max-width: 680px)
   .why-us-section
     .col-6, .col-7
@@ -2059,14 +2112,65 @@
     &:first-child
       margin: 0
 
-
   .page-home
     margin: 30px 0 70px
-    
+
   .viewed-box
     flex-wrap: wrap
     p
-      margin: 0 10px 0 0        
+      margin: 0 10px 0 0
+
+  .list-filter-prices__item
+    margin: 0 8px 8px 0
+    &:last-child
+      margin: 0
+
+  .list-filter-prices__link, .btn-toggle-filter-prices
+    padding: 7px 18px  
+    font-size: 15px
+    line-height: 22px
+
+  .panel_heading-price .block_hover
+    padding: 0
+
+  .panel_heading-price .block_title
+    padding: 16px 66px 16px 16px
+    &::after
+      right: 16px
+      width: 40px
+      height: 40px
+      min-width: 40px    
+      background-size: 20px
+
+  .panel_heading.in .block_title::after
+    background-size: 20px
+
+  .panel_heading-avatar
+    width: 68px
+    height: 68px      
+    min-width: 68px
+    margin: 0 10px 0 0
+
+  .panel_heading .block_title .box-text
+    margin: 8px 0 0 
+    font-size: 14px
+
+  .sale-label
+    display: block
+    margin: 6px 0 0
+    padding: 4px 14px
+    font-size: 13px
+    line-height: 14px
+    width: fit-content
+
+  .table-prices .new-price
+    font-size: 15px
+
+  .table-prices .old-price
+    display: block
+    margin: 4px 0 0
+    line-height: 16px        
+
 @media only screen and (max-width: 440px)
   .header-top
     padding: 8px 0
@@ -2542,7 +2646,52 @@
   .filter-works
     .select-my
       width: 100%
-      margin: 0 0 10px    
+      margin: 0 0 10px
+
+  .panel_heading-price .block_title::after
+    width: 36px
+    height: 36px
+    min-width: 36px  
+      
+  .panel_heading-price .block_hover
+    padding: 0
+
+  .panel_heading-price .block_title
+    padding: 14px 60px 14px 14px
+    flex-direction: column
+    align-items: flex-start
+    &:after
+      width: 36px
+      height: 36px
+      min-width: 36px
+      transform: none
+      top: 82px
+
+  .panel_heading-price.in .block_title:after
+    top: 82px
+    transform: rotate(95deg)
+
+  .panel_heading-price.in .block_title:hover::after
+    transform: rotate(95deg)  
+
+  .panel_heading-avatar
+    width: 58px
+    height: 58px
+    min-width: 58px
+    margin: 0 0 10px    
+
+  .table-prices .table-subtitle td
+    padding: 11px
+
+  .list-filter-prices__item
+    margin: 0 7px 7px 0
+    &:last-child
+      margin: 0
+      
+  .list-filter-prices__link, .btn-toggle-filter-prices
+    padding: 6.5px 14px
+    font-size: 14px
+    line-height: 21px  
 
 @media only screen and (max-width: 330px)
   .header-top .contact-link

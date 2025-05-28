@@ -266,21 +266,26 @@ $('.go_to').click(function (e) {
   e.preventDefault();
   var scroll_el = $(this).attr('href');
   if ($(scroll_el).length !== 0) {
-      $('html, body').animate({
-          scrollTop: $(scroll_el).offset().top
-      }, 500);
+    $('html, body').animate({
+      scrollTop: $(scroll_el).offset().top
+    }, 500);
   }
   return false;
 });
 
-$('.form-callback [type="submit"]').on('click', function(e){
+$('.form-callback [type="submit"]').on('click', function (e) {
   e.preventDefault();
   $('.form-callback').fadeOut();
   $('.callback-thanks').fadeIn();
 });
 
 // filter prices toggle
-$('.filter-prices__toggle').on('click', function (e) {
+$('.btn-toggle-filter-prices').on('click', function (e) {
   e.preventDefault();
-  
+  $(this).parents('.list-filter-prices').find('.list-filter-prices__item:hidden').slice(0, 5).slideDown();
+
+  var onBlock = $(this).parents('.list-filter-prices').find('.list-filter-prices__item:hidden').length;
+  if (onBlock <= 0) {
+    $(this).hide();
+  }
 });
