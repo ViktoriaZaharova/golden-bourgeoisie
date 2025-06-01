@@ -412,6 +412,14 @@ h4, .h4 {
   margin: 0 10px 0 0;
 }
 
+.subtitle-title {
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  color: #CBAA65;
+  font-size: 20px;
+  line-height: 28px;
+}
+
 .box-text {
   font-size: 18px;
   line-height: 24px;
@@ -604,6 +612,14 @@ h4, .h4 {
   opacity: 0.5;
 }
 
+.bg-brown {
+  background: #CBAA65;
+}
+
+.bg-red {
+  background: #D60000;
+}
+
 .form {
   width: 100%;
 }
@@ -772,7 +788,7 @@ blockquote::before p:last-child {
   background-size: 22px;
 }
 .select-my:last-child {
-  margin: 0;
+  margin: 0 0 12px;
 }
 
 .filter-works {
