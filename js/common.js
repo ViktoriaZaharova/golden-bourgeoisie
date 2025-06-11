@@ -289,3 +289,32 @@ $('.btn-toggle-filter-prices').on('click', function (e) {
     $(this).hide();
   }
 });
+
+
+// dropdown
+$(function () { // Dropdown toggle
+  $('.dropdown-toggle').click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass('click').parent('.dropdown-wrapper').find('.dropdown-menu').slideToggle();
+  });
+
+  $(document).click(function (e) {
+    var target = e.target;
+    if (!$(target).is('.dropdown-toggle') && !$(target).parents().is('.dropdown-toggle')) {
+      $('.dropdown-toggle').removeClass('click');
+      $('.dropdown-menu').slideUp();
+    }
+  });
+});
+
+$('.btn-filter-mobile').on('click', function(e){
+  e.preventDefault();
+  $('.overlay').fadeIn();
+  $('.sidebar-filter').fadeIn();
+});
+
+$('.sidebar-filter__close, .overlay').on('click', function(e){
+  e.preventDefault();
+  $('.sidebar-filter').fadeOut();
+   $('.overlay').fadeOut();
+});

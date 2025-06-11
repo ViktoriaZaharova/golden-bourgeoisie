@@ -252,6 +252,10 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   height: 54px;
 }
 
+.btn-sm {
+  height: 48px;
+}
+
 .btn-accent {
   background: #CBAA65;
   color: #fff;
@@ -267,6 +271,15 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 }
 .btn-grey:hover, .btn-grey:focus {
   background: #CBAA65;
+  color: #fff;
+}
+
+.btn-light-grey {
+  background: #C4C4C4;
+  color: #E6E6E6;
+}
+.btn-light-grey:hover, .btn-light-grey:focus {
+  background: #414141;
   color: #fff;
 }
 
@@ -620,6 +633,10 @@ h4, .h4 {
   background: #D60000;
 }
 
+.bg-grey {
+  background: #414141;
+}
+
 .form {
   width: 100%;
 }
@@ -807,6 +824,12 @@ blockquote::before p:last-child {
 .viewed-box p {
   font-weight: 300;
   margin: 0 18px 0 0;
+}
+.viewed-box select {
+  margin: 0;
+}
+.viewed-box select:last-child {
+  margin: 0;
 }
 
 .nav-pagination {
@@ -1202,32 +1225,80 @@ tbody .td-price {
   margin: 40px 0 150px;
 }
 
+.dropdown-wrapper {
+  position: relative;
+  z-index: 2;
+}
+.dropdown-wrapper .dropdown-menu {
+  min-width: 288px;
+  max-width: 288px;
+}
+.dropdown-wrapper .dropdown-menu__body {
+  width: 100%;
+}
+.dropdown-wrapper .dropdown-menu__footer {
+  width: 100%;
+  margin: 14px 0 0;
+  padding: 10px 0 0;
+  border-top: 1px solid rgba(0, 12, 29, 0.12);
+}
+
+.dropdown-toggle {
+  height: 48px;
+  color: #414141;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.dropdown-toggle.click {
+  background: #F0EEDE;
+}
+.dropdown-toggle.click .svg-icon {
+  transform: rotate(180deg);
+}
+.dropdown-toggle .svg-icon {
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  fill: #414141;
+  margin: 0 0 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-checkbox {
+  width: 100%;
+}
+.list-checkbox li {
+  width: 100%;
+  padding: 12px 16px;
+  margin: 0 0 2px;
+}
+.list-checkbox li:last-child {
+  margin: 0;
+}
+
 .label-checkbox {
   position: relative;
   display: flex;
-  align-items: flex-start;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
-  margin: 15px 0 0;
-  line-height: 1.14;
+  align-items: center;
+  color: #414141;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
 }
-
-.inp-check {
+.label-checkbox__custom {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  margin: 0 10px 0 0;
+  border: 1px solid #414141;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.label-checkbox input {
   display: none;
 }
-
-.checkbox-custom {
-  margin: 0 12px 0 0;
-  position: relative;
-  border-radius: 6px;
-  background-color: #fff;
-  width: 16px;
-  height: 16px;
-  min-width: 16px;
-  cursor: pointer;
-}
-
-.inp-check:checked ~ .checkbox-custom {
-  background: #fff url("../img/check-black.svg") no-repeat center;
-  background-size: 8px;
+.label-checkbox input:checked ~ .label-checkbox__custom {
+  background: #414141 url("../img/check-icon.svg") no-repeat center;
+  background-size: 18px;
 }
