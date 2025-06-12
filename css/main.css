@@ -1692,3 +1692,17 @@
 .btn-filter-mobile:hover .svg-icon, .btn-filter-mobile:focus .svg-icon {
   fill: #fff;
 }
+
+.sorting-mobile-wrapper {
+  display: none;
+  margin: 0 0 0 auto;
+}
+.sorting-mobile-wrapper .btn-sorting {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  padding: 12px;
+}
+.sorting-mobile-wrapper .btn-sorting svg {
+  margin: 0;
+}
