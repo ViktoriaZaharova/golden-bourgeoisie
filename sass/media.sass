@@ -841,6 +841,9 @@
   .filter-wrapper
     display: none
 
+  .filter-wrapper-v2
+    display: flex   
+
   .btn-filter-mobile
     display: flex
 
@@ -1665,6 +1668,11 @@
 
   .sidebar-filter-v2 .block_hover
     padding: 0
+
+  .filter-wrapper-item .dropdown-toggle
+    padding: 8px 12px
+    font-size: 16px
+    line-height: 22px
 
 @media only screen and (max-width: 680px)
   .why-us-section
@@ -2548,6 +2556,21 @@
     font-size: 15px
     line-height: 22px  
 
+  .filter-wrapper-item
+    margin: 0 6px 6px 0 
+      
+
+  .filter-wrapper-item.active .dropdown-toggle
+    font-size: 14px
+    line-height: 20px
+    padding: 8px
+
+  .filter-wrapper-item-v2.active .dropdown-toggle
+    .dropdown-toggle__name
+      display: none
+    span
+      margin: 0
+
 @media only screen and (max-width: 440px)
   .header-top
     padding: 8px 0
@@ -3170,7 +3193,7 @@
   .sidebar-filter     
     max-width: 312px
     padding: 20px 18px
-    
+
 @media only screen and (max-width: 330px)
   .header-top .contact-link
     font-size: 13px
