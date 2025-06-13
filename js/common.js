@@ -135,6 +135,36 @@ $('.sales-slider').slick({
   ],
 });
 
+$('.products-slider').slick({
+  slidesToShow: 5,
+  appendArrows: '.products-slider__arrows',
+  prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+  nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+  responsive: [
+    {
+      breakpoint: 1500,
+      settings: {
+        slidesToShow: 4,
+      },
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 2,
+        arrows: false,
+        autoplay: true,
+        variableWidth: true,
+      },
+    },
+  ],
+});
+
 $('.results-slider').slick({
   slidesToShow: 3,
   swipe: false,
@@ -185,9 +215,44 @@ $('.video-gallery-slider').slick({
   ],
 });
 
+$('.product-gallery-max').slick({
+  slidesToShow: 1,
+  fade: true,
+  asNavFor: '.product-gallery-preview',
+  prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+  nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+})
+
+$('.product-gallery-preview').slick({
+  slidesToShow: 3,
+  asNavFor: '.product-gallery-max',
+  focusOnSelect: true,
+  arrows: false,
+  vertical: true,
+});
+
 // Fancybox
 Fancybox.bind("[data-fancybox]", {
   // Your custom options
+});
+
+// amount
+$('.down').on("click", function () {
+  let $input = $(this).parent().find('input');
+  let count = parseInt($input.val()) - 1;
+  count = count < 1 ? 1 : count;
+  $input.val(count);
+  $input.change();
+  return false;
+});
+$('.up').on("click", function () {
+  let $input = $(this).parent().find('input');
+  $input.val(parseInt($input.val()) + 1);
+  $input.change();
+  return false;
+});
+$('.amount input').on('input', function () {
+  $(this).val($(this).val().replace(/[A-Za-zА-Яа-яЁё]/, ''))
 });
 
 // tabs
@@ -307,14 +372,14 @@ $(function () { // Dropdown toggle
   });
 });
 
-$('.btn-filter-mobile').on('click', function(e){
+$('.btn-filter-mobile').on('click', function (e) {
   e.preventDefault();
   $('.overlay').fadeIn();
   $('.sidebar-filter').fadeIn();
 });
 
-$('.sidebar-filter__close, .overlay').on('click', function(e){
+$('.sidebar-filter__close, .overlay').on('click', function (e) {
   e.preventDefault();
   $('.sidebar-filter').fadeOut();
-   $('.overlay').fadeOut();
+  $('.overlay').fadeOut();
 });

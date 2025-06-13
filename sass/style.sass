@@ -167,7 +167,7 @@ button, .btn
   height: 54px
 
 .btn-sm
-  height: 48px  
+  height: 48px
 
 .btn-accent
   background: $accent
@@ -184,7 +184,7 @@ button, .btn
     color: #fff
 
 .btn-light-grey
-  background: #C4C4C4   
+  background: #C4C4C4
   color: #E6E6E6
   &:hover, &:focus
     background: $grey
@@ -420,6 +420,11 @@ h4, .h4
 .col-3
   flex: 0 0 25%
   max-width: 25%
+  padding: 0 9px
+
+.col-2
+  flex: 0 0 20%
+  max-width: 20%
   padding: 0 9px
 
 .d-flex
@@ -771,6 +776,92 @@ blockquote
     padding: 0 9px
     height: auto
 
+.list-rating
+  display: flex
+  align-items: flex-start
+  margin: 0 8px 0 0
+  li
+    margin: 0 4px 0 0
+    &:last-child
+      margin: 0
+    svg
+      margin: 0
+      &:last-child
+        margin: 0
+
+.list-radio
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  li
+    margin: 0 8px 8px 0
+    &:last-child
+      margin: 0 0 8px
+  .label-radio
+    position: relative
+    z-index: 1
+    width: 82px
+    height: 56px
+    text-align: center
+    cursor: pointer
+    @include d-flex
+    transition: .3s ease
+    color: $grey
+    font-size: 18px
+    line-height: 24px
+    &__text
+      position: relative
+      z-index: 1
+    &__custom
+      position: absolute
+      z-index: -1
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      border: 1px solid rgba(#000, .1 )
+      background: #fff
+    input
+      display: none
+      &:checked
+        + .label-radio__custom
+            background: $grey
+            + .label-radio__text
+                color: #fff
+
+.amount
+  display: flex
+  align-items: center
+  width: 182px
+  min-width: 182px
+  border: 1px solid rgba(#000, .1)
+  padding: 0 18px
+  input
+    height: 64px
+    width: 100%
+    margin: 0 10px
+    text-align: center
+    padding: 0
+    font-family: $default-font
+    color: $grey
+    font-size: 18px
+    line-height: 24px
+    font-weight: normal
+
+  span
+    width: 24px
+    height: 24px
+    min-width: 24px
+    @include d-flex
+    cursor: pointer
+    fill: $grey
+    transition: .3s ease
+    &:hover
+      fill: $accent
+    &.down
+      opacity: 0.5
+
 .twentytwenty-after-label, .twentytwenty-before-label
   opacity: 1
   top: auto
@@ -978,16 +1069,16 @@ tbody
   color: $grey
   border: 1px solid rgba(#000,.1)
   &.click
-    background: #F0EEDE     
+    background: #F0EEDE
     .svg-icon
-      transform: rotate(180deg) 
+      transform: rotate(180deg)
   .svg-icon
     width: 22px
     height: 22px
     min-width: 22px
     fill: $grey
     margin: 0 0 0 10px
-    @include d-flex  
+    @include d-flex
 
 .list-checkbox
   width: 100%
