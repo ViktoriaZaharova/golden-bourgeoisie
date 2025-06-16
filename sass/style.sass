@@ -776,18 +776,32 @@ blockquote
     padding: 0 9px
     height: auto
 
+.link
+  border-bottom: 1px solid $accent
+  font-size: 18px
+  color: $accent
+  &:hover
+    color: $grey    
+
 .list-rating
   display: flex
   align-items: flex-start
   margin: 0 8px 0 0
   li
+    width: 20px
+    height: 20px
+    min-width: 20px
     margin: 0 4px 0 0
     &:last-child
       margin: 0
     svg
       margin: 0
+      fill: $grey
       &:last-child
         margin: 0
+  .list-rating-0      
+    svg
+      opacity: 0.2
 
 .list-radio
   width: 100%

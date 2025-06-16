@@ -1005,12 +1005,24 @@ blockquote::before p:last-child {
   height: auto;
 }
 
+.link {
+  border-bottom: 1px solid #CBAA65;
+  font-size: 18px;
+  color: #CBAA65;
+}
+.link:hover {
+  color: #414141;
+}
+
 .list-rating {
   display: flex;
   align-items: flex-start;
   margin: 0 8px 0 0;
 }
 .list-rating li {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
   margin: 0 4px 0 0;
 }
 .list-rating li:last-child {
@@ -1018,9 +1030,13 @@ blockquote::before p:last-child {
 }
 .list-rating li svg {
   margin: 0;
+  fill: #414141;
 }
 .list-rating li svg:last-child {
   margin: 0;
+}
+.list-rating .list-rating-0 svg {
+  opacity: 0.2;
 }
 
 .list-radio {

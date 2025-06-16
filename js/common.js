@@ -219,8 +219,8 @@ $('.product-gallery-max').slick({
   slidesToShow: 1,
   fade: true,
   asNavFor: '.product-gallery-preview',
-  prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
-  nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+  prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev-icon"></use></svg></button>',
+  nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next-icon"></use></svg></button>',
 })
 
 $('.product-gallery-preview').slick({
