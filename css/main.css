@@ -1874,6 +1874,9 @@
   height: 28px;
   min-width: 28px;
 }
+.btn-add-favorite span {
+  display: none;
+}
 
 .product-option-box {
   width: 100%;
@@ -1976,12 +1979,13 @@
 .delivery-list li span {
   padding: 0 0 0 14px;
   margin-left: auto;
+  text-align: right;
 }
 .delivery-list li::before {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 2px;
   width: 100%;
   height: 1px;
   border-bottom: 1px dashed #D6D6D6;
@@ -2042,7 +2046,10 @@
   line-height: 70px;
 }
 .reviews-product-head__item .box-text {
-  margin: 6px 0 0 0;
+  margin: 0;
+}
+.reviews-product-head__item .list-rating {
+  margin: 0 0 8px;
 }
 
 .btn-add-reviews {

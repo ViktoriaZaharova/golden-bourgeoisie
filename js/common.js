@@ -148,7 +148,7 @@ $('.products-slider').slick({
       },
     },
     {
-      breakpoint: 992,
+      breakpoint: 1200,
       settings: {
         slidesToShow: 3,
       },
@@ -229,6 +229,18 @@ $('.product-gallery-preview').slick({
   focusOnSelect: true,
   arrows: false,
   vertical: true,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 1,
+        vertical: false,
+        arrows: false,
+        variableWidth: true,
+        infinite: false
+      },
+    }
+  ],
 });
 
 // Fancybox

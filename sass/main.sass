@@ -1509,6 +1509,8 @@
     width: 28px
     height: 28px
     min-width: 28px
+  span
+    display: none  
 
 .product-option-box
   width: 100%
@@ -1594,11 +1596,12 @@
     span
       padding: 0 0 0 14px  
       margin-left: auto  
+      text-align: right
     &::before
       content: ''
       position: absolute
       left: 0
-      bottom: 0
+      bottom: 2px
       width: 100%
       height: 1px
       border-bottom: 1px dashed #D6D6D6
@@ -1650,7 +1653,9 @@
     font-size: 66px
     line-height: 70px
   .box-text
-    margin: 6px 0 0 0
+    margin: 0
+  .list-rating
+    margin: 0 0 8px  
 
 .btn-add-reviews
   min-width: 267px
