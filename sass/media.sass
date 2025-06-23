@@ -213,6 +213,9 @@
     padding: 0 0 8px
     min-width: auto
 
+  .yandex-taxi
+    margin: 80px 0 0  
+
 @media only screen and (max-width: 1200px)
   .container
     max-width: 962px
@@ -794,11 +797,20 @@
     line-height: 30px
 
   .map-wrapper
-    margin: 20px 0
-    height: 400px
+    margin: 0
+    height: 100%
 
   .requisites-box, .contacts-wrapper
     padding: 24px
+
+  .requisites-box
+    margin: 16px 0 0
+    &.d-pc
+      display: none
+
+  .home-contacts
+    .d-tablet
+      display: block      
 
   .link-requisites
     font-size: 18px
@@ -1261,6 +1273,30 @@
       flex: 0 0 100%
       margin-bottom: 20px
 
+  .contacts-wrapper__avatar
+    width: 74px
+    height: 74px
+    min-width: 74px
+    margin: 0 14px 0 0
+
+  .requisites-box, .contacts-wrapper
+    padding: 22px    
+
+  .btn-map img
+    width: 20px
+    margin: 0 10px 0 0    
+
+  .directions-box
+    .col-md-6
+      max-width: 50%
+      flex: 0 0 50%
+
+  .yandex-taxi
+    margin: 132px 0 0
+
+  .tabs-maps
+    margin: 0 0 18px  
+
 @media only screen and (max-width: 768px)
   .btn
     height: 46px
@@ -1695,17 +1731,12 @@
   .directions-box, .requisites-box, .contacts-wrapper
     padding: 20px
 
-  .list-requisites-nav li
-    width: 100%
-    margin: 0 0 10px
-    &:last-child
-      margin: 0
+  
 
   .link-requisites
     font-size: 16px
 
-  .map-wrapper
-    height: 300px
+  
 
   .contacts-wrapper__avatar
     width: 60px
@@ -3039,6 +3070,31 @@
   .product-information .tab_container
     margin: 28px 0 0
 
+  .map-wrapper
+    height: 300px  
+
+  .list-requisites-nav li
+    width: 100%
+    margin: 0 0 10px
+    &:last-child
+      margin: 0  
+
+  .contacts-wrapper
+    margin: 14px 0 0    
+
+  .directions-box .col-sm-12
+    flex: 0 0 100%
+    max-width: 100%
+
+  .directions-box .box-text
+    margin: 0 0 40px  
+
+  .yandex-taxi
+    margin: 133px 0 0
+
+  .tabs-maps
+    margin: 20px 0 14px
+
 @media only screen and (max-width: 440px)
   .header-top
     padding: 8px 0
@@ -3760,6 +3816,9 @@
     .nav-pagination
       margin: 14px 0 0
 
+  .home-contacts
+    h1, .h1
+      margin: 0
   
         
 @media only screen and (max-width: 330px)
